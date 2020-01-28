@@ -1,0 +1,43 @@
+.body {}
+
+
+<!--шапка-->
+.header {}
+
+.header__header_label {}
+
+.header__header_telNumber {}
+
+
+<!--навигационная строка-->
+.navbar {}
+
+.navbar__inner {}
+
+.navbar__search {}
+
+
+<!--основной контент-->
+.main {}
+
+.catalog {}
+
+.main__inner {}
+
+.main__inner_title {}
+
+.main__inner_intro {}
+
+.main__sections {}
+
+.main__sections_card {}
+
+.main__request {}
+
+.main__request_button {}
+
+.main__navbar {}
+
+
+<!--подвал-->
+.footer {}
