@@ -1,42 +1,115 @@
-.body {}
-
-
-<!--шапка-->
-.header {}
-
-.header__header_label {}
-
-.header__header_telNumber {}
+.body {
+	padding: 0 55px;
+	margin: 0;
+}
 
 
 <!--навигационная строка-->
-.navbar {}
+.navbar {
+	padding: 5px;
+    margin: 0;
+    height: auto;
+    width: auto;
+    position: fixed;
+    align-items: center;
+    background-color: blue;
+    background-size: cover;
+    top: 0;
+    display: inline-flex;
+	align-items: center; 
+    justify-content: space-between;
+}
 
-.navbar__inner {}
+.navbar__container {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	
+}
 
-.navbar__search {}
+.navbar__container_logo {
+	align-items: center;
+	height: 15px;
+
+}
+
+.navbar__container_name {
+	width: 75px;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.navbar__container_inner {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.navbar__container_search {}
+
+.navbar__container_contacts {
+	width: 150px;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
 
 
 <!--основной контент-->
-.main {}
+.content {}
 
-.catalog {}
+.content__container {}
 
-.main__inner {}
+.content__aboutUs_title {}
 
-.main__inner_title {}
+.content__aboutUs_intro {}
 
-.main__inner_intro {}
+.content__brends_row {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
 
-.main__sections {}
+.content__brends_row_card {
+	display: block;
+	align-content: center;
+	max-width: 200px;
+	margin: 10px;
+	padding: 10px;
+	border: solid 1px black;
+	border-radius: 20px;
+}
 
-.main__sections_card {}
+.brendCard {
+	align-content: center;
+	margin: 0;
+}
 
-.main__request {}
+.brendLogo {
+	width: 200px;
+	max-height: 200px;
+	display: block;
+	margin: 0 auto;
+}
 
-.main__request_button {}
+.brendName {
+	margin-top: 10px;
+	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: #007765;
+	text-align: center;
+	word-break: normal;
+}
 
-.main__navbar {}
+.content__requestButton {}
+
+.content__navbar {}
 
 
 <!--подвал-->
