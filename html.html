@@ -12,23 +12,31 @@
 	
 	<div class="navbar">
 		<div class="navbar__container">			
-				<a href="">
+				<a href="" class="navbar__container_logoContainer">
 					<img src="logo.jpg" 
 					class="navbar__container_logo">
-					<div class="navbar__container_name">Форзип г. Москва
+					<div class="navbar__container_name">Форзип <br>г. Москва
 					</div>
 				</a>
 		</div>
+
 		<div class="navbar__container">
 			<a href="" class="navbar__container_inner">Главная</a>
 			<a href="" class="navbar__container_inner">Каталог</a>
+			<a href="" class="navbar__container_inner">Обслуживание</a>
 			<a href="" class="navbar__container_inner">Online заявка</a>
 			<a href="" class="navbar__container_inner">Контакты</a>
-			<a href="" class="navbar__container_inner">Обслуживание</a>
 		</div>
+
 		<div class="navbar__container">
-			<div class="navbar__container_search"></div>
+			<form class="navbar__container_search">
+				<input type="text" placeholder="Искать здесь..."
+				class="navbar__container_search_input">
+				<button type="submit"
+				class="navbar__container_search_button"></button>
+			</form>
 		</div>
+
 		<div class="navbar__container">
 			<div class="navbar__container_contacts">
 				+7-916-854-88-90 info@forzip.ru
