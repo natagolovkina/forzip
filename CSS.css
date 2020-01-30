@@ -14,6 +14,7 @@
     top: 0;    
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbar__fixed {
@@ -23,6 +24,8 @@
 .navbar__container {
 	margin: 0 5px;
 	display: inline-flex;
+	background-color: yellow;
+	background-size: cover;
 }
 
 .navbar__container_logoContainer {
@@ -42,11 +45,17 @@
 	font-weight: 700;
 }
 
-.navbar__container_inner {
+.navbar__container_list {
+    padding: 0;
+    display:inline-flex;
+}
+
+.navbar__container_item {
 	margin: auto 3px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
+	list-style: none;
 }
 
 .navbar__container_search {
@@ -144,6 +153,8 @@
 	text-align: center;
 	word-break: normal;
 }
+
+.content__request {}
 
 .content__requestButton {}
 
