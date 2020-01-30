@@ -1,5 +1,5 @@
 .body {
-	padding: 0 55px;
+	padding: 0 15px;
 	margin: 0;
 }
 
@@ -9,31 +9,33 @@
     margin: 0;
     height: auto;
     width: 100%;
-    position: fixed;    
-    background-color: blue;
+    background-color: lightblue;
     background-size: cover;
-    top: 0;
+    top: 0;    
     display: flex;
-    flex-direction: row;
-	align-items: center; 
     justify-content: space-between;
 }
 
+.navbar__fixed {
+	position: fixed;
+}
+
 .navbar__container {
-	margin: 0;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	
+	margin: 0 5px;
+	display: inline-flex;
+}
+
+.navbar__container_logoContainer {
+	display: inline-flex;	
 }
 
 .navbar__container_logo {
-	align-items: center;
-	height: 15px;
-
+	margin: 0 3px;
+	max-height: 30px;
 }
 
 .navbar__container_name {
+	margin: 0 3px;
 	width: 75px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
@@ -41,19 +43,54 @@
 }
 
 .navbar__container_inner {
-	margin: auto 2px;
+	margin: auto 3px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 }
 
-.navbar__container_search {}
+.navbar__container_search {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.navbar__container_search_input {
+  width: 100%;
+  height: 26px;
+  padding: 0 0 0 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.navbar__container_search_button {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 30px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+
+}
+.navbar__container_search_button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
 
 .navbar__container_contacts {
 	width: 150px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
+	text-align: center;
 }
 
 
