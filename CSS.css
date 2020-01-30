@@ -3,19 +3,18 @@
 	margin: 0;
 }
 
-
 <!--навигационная строка-->
 .navbar {
-	padding: 5px;
+	padding: 5px 0;
     margin: 0;
     height: auto;
-    width: auto;
-    position: fixed;
-    align-items: center;
+    width: 100%;
+    position: fixed;    
     background-color: blue;
     background-size: cover;
     top: 0;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
 	align-items: center; 
     justify-content: space-between;
 }
@@ -23,6 +22,7 @@
 .navbar__container {
 	margin: 0;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	
 }
@@ -41,6 +41,7 @@
 }
 
 .navbar__container_inner {
+	margin: auto 2px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 700;
