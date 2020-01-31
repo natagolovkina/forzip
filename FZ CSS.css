@@ -12,25 +12,27 @@
 	display: flex;
 }
 
-.flex_space-between {
+.align-items_center {
+	align-items: center;
+}
+
+.justify-content_space-between {
 	display: flex;
     justify-content: space-between;
+}
+
+.justify-content_center {
+	display: flex;
+    justify-content: center;
 }
 
 .flex-direction_row {
 	flex-direction: row;
 }
 
-.inline-flex {
-	display: inline-flex
-}
-
-.test { width: 100%; align-content: center; }
-
 <!--навигационная строка-->
 .navbar {
 	padding: 5px 0;
-    margin: 0;
     height: auto;
     width: 100%;
     background-color: lightblue;
@@ -67,30 +69,27 @@
 .navbar__container_search {
 	width: 250px;
 	margin: 0 auto;
-	padding: 0;
 }
 
 .navbar__container_search_input {
-  width: 208px;
-  height: 26px;
-  margin: 0;
-  padding: 0 0 0 10px;
-  border: 2px solid #7BA7AB;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  background: #F9F0DA;
-  color: #9E9C9C;
+	width: 208px;
+	height: 26px;
+	padding: 0 0 0 10px;
+	border: 2px solid #7BA7AB;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	background: #F9F0DA;
+	color: #9E9C9C;
 }
 .navbar__container_search_button {
-  margin: 0;
-  top: 0;
-  right: 0px;
-  width: 42px;
-  height: 30px;
-  border: none;
-  background: #7BA7AB;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+	top: 0;
+	right: 0px;
+	width: 42px;
+	height: 30px;
+	border: none;
+	background: #7BA7AB;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
 
 }
 .navbar__container_search_button:before {
@@ -112,7 +111,7 @@
 .catalog {}
 
 .catalog__list {
-	padding: 0;
+	margin: 5px 0;
 }
 
 .catalog__list_item {
@@ -133,22 +132,22 @@
 <!--основной контент-->
 .content {}
 
-.content__container {}
+.content__container {
+	background-color: pink;
+	background-size: cover;
+}
 
 .content__aboutUs_title {}
 
 .content__aboutUs_intro {}
 
 .content__brends {
-	margin: 0;
-	padding: 0;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
 .content__brends_card {
-	display: block;
 	align-content: center;
 	max-width: 200px;
 	margin: 10px;
@@ -159,7 +158,6 @@
 
 .brendCard {
 	align-content: center;
-	margin: 0;
 }
 
 .brendLogo {
@@ -181,12 +179,21 @@
 	word-break: normal;
 }
 
-.content__request {}
+.content__request {
+	background-color: red;
+	background-size: cover;
+}
 
-.content__requestButton {}
+.content__requestButton {
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 7px;
+}
 
 .content__navbar {}
 
 
 <!--подвал-->
 .footer {}
+
+.footer_siteMap {}
