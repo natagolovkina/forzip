@@ -32,11 +32,8 @@
 
 <!--навигационная строка-->
 .navbar {
-	padding: 5px 0;
-    height: auto;
-    width: 100%;
-    background-color: lightblue;
-    background-size: cover;
+	height: auto;
+    width: 100%;    
     top: 0;    
     align-items: center;
 }
@@ -47,8 +44,6 @@
 
 .navbar__container {
 	margin: 0 5px;
-	background-color: yellow;
-	background-size: cover;
 }
 
 .navbar__container_logoContainer {}
@@ -66,6 +61,19 @@
 	font-weight: 700;
 }
 
+.navbar__request {}
+
+.navbar__requestButton {
+	padding: 2px;
+	border: solid 1px black;
+	border-radius: 7px;
+}
+
+.imgOnlineRequest {
+	max-height: 26px;
+	margin: 0 3px;
+}
+
 .navbar__container_search {
 	width: 250px;
 	margin: 0 auto;
@@ -76,7 +84,7 @@
 	height: 26px;
 	padding: 0 0 0 10px;
 	border: 2px solid #7BA7AB;
-	border-radius: 5px 0 0 5px;
+	border-radius: 7px 0 0 7px;
 	outline: none;
 	background: #F9F0DA;
 	color: #9E9C9C;
@@ -88,15 +96,14 @@
 	height: 30px;
 	border: none;
 	background: #7BA7AB;
-	border-radius: 0 5px 5px 0;
+	border-radius: 0 7px 7px 0;
 	cursor: pointer;
 
 }
-.navbar__container_search_button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: #F9F0DA;
+
+.imgSearch {
+	max-height: 28px;
+	margin: auto;
 }
 
 .navbar__container_contacts {
@@ -132,10 +139,7 @@
 <!--основной контент-->
 .content {}
 
-.content__container {
-	background-color: pink;
-	background-size: cover;
-}
+.content__container {}
 
 .content__aboutUs_title {}
 
@@ -179,21 +183,31 @@
 	word-break: normal;
 }
 
-.content__request {
-	background-color: red;
-	background-size: cover;
-}
-
-.content__requestButton {
-	padding: 3px;
-	border: solid 1px black;
-	border-radius: 7px;
-}
-
-.content__navbar {}
-
 
 <!--подвал-->
 .footer {}
 
 .footer_siteMap {}
+
+
+<!--для проверки-->
+
+.background_lightblue {
+	background-color: lightblue;
+	background-size: cover;
+}
+
+.background_yellow {
+	background-color: yellow;
+	background-size: cover;
+}
+
+.background_pink {
+	background-color: pink;
+	background-size: cover;
+}
+
+.background_red {
+	background-color: red;
+	background-size: cover;
+}
