@@ -10,26 +10,38 @@
 <body>
 <div class="body">
 	
-	<div class="navbar justify-content_space-between">
-		<div class="navbar__container flex">			
+	<div class="navbar justify-content_space-between align-items_center navbar__fixed background_yellow">
+		<div class="navbar__container flex">	
 				<a href="" class="navbar__container_logoContainer flex">
 					<img src="logo.jpg" 
 					class="navbar__container_logo">
 					<div class="navbar__container_name">Форзип <br>г. Москва
 					</div>
 				</a>
-		</div>		
+		</div>
+
+		<div class="navbar__container">
+			<div class="navbar__request justify-content_center background_red">
+				<button href="" class="navbar__requestButton flex align-items_center">
+					ОСТАВИТЬ ЗАЯВКУ 
+					<img src="onlineRequest.png" class="imgOnlineRequest">
+				</button>
+			</div>
+		</div>
 
 		<div class="navbar__container flex align-items_center">
 			<form class="navbar__container_search justify-content_space-between flex-direction_row">
 				<input type="text" placeholder="Искать здесь..."
 				class="navbar__container_search_input">
 				<button type="submit"
-				class="navbar__container_search_button"></button>
+				class="navbar__container_search_button flex">
+					<img src="navbar/search1.png" class="imgSearch">
+				</button>
 			</form>
 
 			<div class="navbar__container_contacts">
-				+7-916-854-88-90 info@forzip.ru
+				<a href="tel:+79168548890">+7-916-854-88-90</a>
+				<a href="mailto:info@forzip.ru">info@forzip.ru</a>
 			</div>
 		</div>		
 	</div>
@@ -60,7 +72,7 @@
 			<p class="content__aboutUs_intro">Фирма ООО "ФОРЗИП" специализируется на обслуживании и ремонте компрессорного оборудования. Фирма предлагает к продаже компрессоры в широком ассортименте для производства сжатого воздуха, а также материалы и комплектующие к ним.</p>
 		</div>
 
-		<div class="content__container">
+		<div class="content__container background_pink">
 			<div class="content__brends flex flex-direction_row">
 				<div class="content__brends_card">
 					<figure class="brendCard">
@@ -103,22 +115,10 @@
 				</div>
 			</div>			
 		</div>
+	</div>
 
-		<div class="content__container">
-			<div class="content__request justify-content_center">
-				<button href="" class="content__requestButton">
-					ОСТАВИТЬ ЗАЯВКУ
-				</button>
-			</div>
-		</div>
-		
-		<div class="content__container">
-			<div class="content__navbar"></div>
-		</div>
-
-		<div class="footer justify-content_center">
-			<a href="" class="footer_siteMap">карта сайта</a>
-		</div>
+	<div class="footer justify-content_center">
+		<a href="" class="footer_siteMap">карта сайта</a>
 	</div>
 </div>
 </body>
