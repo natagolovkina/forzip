@@ -10,9 +10,9 @@
 <body>
 <div class="body">
 	
-	<div class="navbar flex_space-between">
-		<div class="navbar__container inline-flex">			
-				<a href="" class="navbar__container_logoContainer inline-flex">
+	<div class="navbar justify-content_space-between">
+		<div class="navbar__container flex">			
+				<a href="" class="navbar__container_logoContainer flex">
 					<img src="logo.jpg" 
 					class="navbar__container_logo">
 					<div class="navbar__container_name">Форзип <br>г. Москва
@@ -20,24 +20,22 @@
 				</a>
 		</div>		
 
-		<div class="navbar__container">
-			<form class="navbar__container_search flex_space-between flex-direction_row">
+		<div class="navbar__container flex align-items_center">
+			<form class="navbar__container_search justify-content_space-between flex-direction_row">
 				<input type="text" placeholder="Искать здесь..."
 				class="navbar__container_search_input">
 				<button type="submit"
 				class="navbar__container_search_button"></button>
 			</form>
-		</div>
 
-		<div class="navbar__container">
 			<div class="navbar__container_contacts">
 				+7-916-854-88-90 info@forzip.ru
 			</div>
-		</div>
+		</div>		
 	</div>
 
 	<div class="catalog">
-		<ul class="catalog__list flex_space-between flex-direction_row">
+		<ul class="catalog__list justify-content_space-between flex-direction_row">
 			<li class="catalog__list_item">
 				<a href="">Главная</a>
 			</li>
@@ -106,19 +104,21 @@
 			</div>			
 		</div>
 
-		<div class="content__container">			
-		<a href="" class="content__request">
-			<button class="content__requestButton">
-				ОСТАВИТЬ ЗАЯВКУ
-			</button>
-		</a>
+		<div class="content__container">
+			<div class="content__request justify-content_center">
+				<button href="" class="content__requestButton">
+					ОСТАВИТЬ ЗАЯВКУ
+				</button>
+			</div>
 		</div>
 		
 		<div class="content__container">
 			<div class="content__navbar"></div>
 		</div>
 
-		<div class="footer">карта сайта</div>
+		<div class="footer justify-content_center">
+			<a href="" class="footer_siteMap">карта сайта</a>
+		</div>
 	</div>
 </div>
 </body>
