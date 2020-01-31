@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	padding: 0 15px;
+	margin: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex_space-between {
+	display: flex;
+    justify-content: space-between;
+}
+
+.flex-direction_row {
+	flex-direction: row;
+}
+
+.inline-flex {
+	display: inline-flex
+}
+
+.test { width: 100%; align-content: center; }
+
+<!--навигационная строка-->
+.navbar {
+	padding: 5px 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background-color: lightblue;
+    background-size: cover;
+    top: 0;    
+    align-items: center;
+}
+
+.navbar__fixed {
+	position: fixed;
+}
+
+.navbar__container {
+	margin: 0 5px;
+	background-color: yellow;
+	background-size: cover;
+}
+
+.navbar__container_logoContainer {}
+
+.navbar__container_logo {
+	margin: 0 3px;
+	max-height: 30px;
+}
+
+.navbar__container_name {
+	margin: 0 3px;
+	width: 75px;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.navbar__container_search {
+	width: 250px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navbar__container_search_input {
+  width: 208px;
+  height: 26px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.navbar__container_search_button {
+  margin: 0;
+  top: 0;
+  right: 0px;
+  width: 42px;
+  height: 30px;
+  border: none;
+  background: #7BA7AB;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+
+}
+.navbar__container_search_button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+}
+
+.navbar__container_contacts {
+	width: 150px;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+
+<!--каталог-->
+.catalog {}
+
+.catalog__list {
+	padding: 0;
+}
+
+.catalog__list_item {
+	background-color: lightblue;
+	background-size: cover;
+	border: solid 1px black;
+	border-radius: 5px;
+	margin: auto 3px;
+	padding: 3px;
+	width: 20%;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	list-style: none;
+	text-align: center;
+}
+
+<!--основной контент-->
+.content {}
+
+.content__container {}
+
+.content__aboutUs_title {}
+
+.content__aboutUs_intro {}
+
+.content__brends {
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.content__brends_card {
+	display: block;
+	align-content: center;
+	max-width: 200px;
+	margin: 10px;
+	padding: 10px;
+	border: solid 1px black;
+	border-radius: 20px;
+}
+
+.brendCard {
+	align-content: center;
+	margin: 0;
+}
+
+.brendLogo {
+	width: 200px;
+	max-height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.brendName {
+	margin-top: 10px;
+	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	color: #007765;
+	text-align: center;
+	word-break: normal;
+}
+
+.content__request {}
+
+.content__requestButton {}
+
+.content__navbar {}
+
+
+<!--подвал-->
+.footer {}
