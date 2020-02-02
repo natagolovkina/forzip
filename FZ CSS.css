@@ -26,20 +26,20 @@
     justify-content: center;
 }
 
-.flex-direction_row {
-	flex-direction: row;
-}
-
 <!--навигационная строка-->
 .navbar {
 	height: auto;
     width: 100%;    
-    top: 0;    
     align-items: center;
 }
 
 .navbar__fixed {
 	position: fixed;
+}
+
+.navbar__sticky {
+	position: sticky;
+	top: 0;
 }
 
 .navbar__container {
