@@ -17,14 +17,13 @@
 }
 
 .justify-content_space-between {
-	display: flex;
     justify-content: space-between;
 }
 
 .justify-content_center {
-	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
+
 
 <!--навигационная строка-->
 .navbar {
@@ -146,6 +145,7 @@
 .content__aboutUs_intro {}
 
 .content__brends {
+	width: 70%;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -153,9 +153,9 @@
 
 .content__brends_card {
 	align-content: center;
-	max-width: 200px;
 	margin: 10px;
 	padding: 10px;
+	max-width: 100px;
 	border: solid 1px black;
 	border-radius: 20px;
 }
@@ -164,20 +164,28 @@
 	align-content: center;
 }
 
+.brendLogoContainer {
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	background-size: cover;
+}
+
 .brendLogo {
-	width: 200px;
-	max-height: 200px;
 	display: block;
 	margin: 0 auto;
+	max-height: 100px;
+	max-width: 100px;
 }
 
 .brendName {
 	margin-top: 10px;
+	height: 20px;
 	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 16px;
-	line-height: 18px;
+	font-size: 12px;
+	line-height: 10px;
 	color: #007765;
 	text-align: center;
 	word-break: normal;
@@ -191,6 +199,14 @@
 
 
 <!--для проверки-->
+
+.width_70 {
+	width: 70%;
+}
+
+.width_80 {
+	width: 80%;
+}
 
 .background_lightblue {
 	background-color: lightblue;

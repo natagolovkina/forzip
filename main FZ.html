@@ -10,7 +10,7 @@
 <body>
 <div class="body">
 	
-	<div class="navbar justify-content_space-between align-items_center navbar__sticky background_yellow">
+	<div class="navbar flex justify-content_space-between align-items_center navbar__sticky background_yellow">
 		<div class="navbar__container flex">	
 				<a href="" class="navbar__container_logoContainer flex">
 					<img src="logo.jpg" 
@@ -21,7 +21,7 @@
 		</div>
 
 		<div class="navbar__container">
-			<div class="navbar__request justify-content_center background_red">
+			<div class="navbar__request flex justify-content_center background_red">
 				<button href="" class="navbar__requestButton flex align-items_center">
 					ОСТАВИТЬ ЗАЯВКУ 
 					<img src="onlineRequest.png" class="imgOnlineRequest">
@@ -30,7 +30,7 @@
 		</div>
 
 		<div class="navbar__container flex align-items_center">
-			<form class="navbar__container_search justify-content_space-between flex-direction_row">
+			<form class="navbar__container_search flex justify-content_space-between flex-direction_row">
 				<input type="text" placeholder="Искать здесь..."
 				class="navbar__container_search_input">
 				<button type="submit"
@@ -47,7 +47,7 @@
 	</div>
 
 	<div class="catalog">
-		<ul class="catalog__list justify-content_space-between flex-direction_row">
+		<ul class="catalog__list flex justify-content_space-between flex-direction_row">
 			<li class="catalog__list_item">
 				<a href="">Главная</a>
 			</li>
@@ -72,44 +72,54 @@
 			<p class="content__aboutUs_intro">Фирма ООО "ФОРЗИП" специализируется на обслуживании и ремонте компрессорного оборудования. Фирма предлагает к продаже компрессоры в широком ассортименте для производства сжатого воздуха, а также материалы и комплектующие к ним.</p>
 		</div>
 
-		<div class="content__container background_pink">
-			<div class="content__brends flex flex-direction_row">
+		<div class="content__container flex justify-content_center background_pink">
+			<div class="content__brends width_70 flex flex-direction_row">
 				<div class="content__brends_card">
 					<figure class="brendCard">
-						<img src="brends/remeza.jpg"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/remeza.jpg"
+							class="brendLogo">
+						</div>
 						<figcaption class="brendName">Ремеза (Remeza)</figcaption>
 					</figure>					
 				</div>
 
 				<div class="content__brends_card">
 					<figure class="brendCard">
-						<img src="brends/aso.jpg"
-						class="brendLogo">
-						<figcaption class="brendName">Винтовые компрессоры Бежецкого завода АСО</figcaption>
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/aso.jpg"
+							class="brendLogo">
+						</div>						
+						<figcaption class="brendName">Бежецкий завод АСО</figcaption>
 					</figure>					
 				</div>
 
 				<div class="content__brends_card">
 					<figure class="brendCard">
-						<img src="brends/berg.png"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/berg.png"
+							class="brendLogo">
+						</div>
 						<figcaption class="brendName">Берг (Berg)</figcaption>
 					</figure>					
 				</div>
 
 				<div class="content__brends_card">
 					<figure class="brendCard">
-						<img src="brends/comprag.jpg"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/comprag.jpg"
+							class="brendLogo">
+						</div>						
 						<figcaption class="brendName">Компраг (Comprag)</figcaption>
 					</figure>					
 				</div>
 
 				<div class="content__brends_card">
 					<figure class="brendCard">
-						<img src="brends/fini.jpg"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/fini.jpg"
+							class="brendLogo">
+						</div>
 						<figcaption class="brendName">Фини (FINI)</figcaption>
 					</figure>					
 				</div>
@@ -117,7 +127,7 @@
 		</div>
 	</div>
 
-	<div class="footer justify-content_center">
+	<div class="footer flex justify-content_center">
 		<a href="" class="footer_siteMap">карта сайта</a>
 	</div>
 </div>
