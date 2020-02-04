@@ -63,8 +63,8 @@
 
 .navbar__request {}
 
-.navbar__requestButton {
-	padding: 2px;
+.navbar__requestButton {	
+	padding: 2px 5px;
 	border: solid 1px black;
 	border-radius: 7px;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
@@ -75,6 +75,7 @@
 .imgOnlineRequest {
 	max-height: 26px;
 	margin: 0 3px;
+	margin-left: 7px;
 }
 
 .navbar__container_search {
@@ -200,6 +201,12 @@
 	word-break: normal;
 }
 
+.content__goodsCarousele {
+	height: 172px;
+	min-width: 70%;
+	font-size: 32px;
+}
+
 
 <!--подвал-->
 .footer {}
@@ -234,5 +241,10 @@
 
 .background_red {
 	background-color: red;
+	background-size: cover;
+}
+
+.background_grey {
+	background-color: grey;
 	background-size: cover;
 }
