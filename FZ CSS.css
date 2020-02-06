@@ -65,53 +65,28 @@ a {
 	font-weight: 700;
 }
 
-.navbar__request {}
+.navbar__container_request {}
 
-.navbar__requestButton {	
-	
+.navbar__container_searchInput {
+	width: 208px;
+	height: 26px;
+	padding: 0 0 0 10px;
+	border: 2px solid #ced4da;
+	border-radius: 7px;
+	outline: none;
+	background: #F9F0DA;
+	color: #9E9C9C;
+	cursor: pointer;
 }
 
 .imgOnlineRequest {
 	padding: 2px 9px;
-	border: solid 1px black;
+	border: solid 1px #ced4da;
 	border-radius: 7px;
 	max-height: 26px;
-	margin: 0 3px;
-	margin-left: 7px;
-	background-color: white;
+	margin: 0 7px 0 14px;
+	background-color: #F9F0DA;
 	background-size: cover;
-}
-
-.navbar__container_search {
-	width: 250px;
-	margin: 0 auto;
-}
-
-.navbar__container_search_input {
-	width: 208px;
-	height: 26px;
-	padding: 0 0 0 10px;
-	border: 2px solid #7BA7AB;
-	border-radius: 7px 0 0 7px;
-	outline: none;
-	background: #F9F0DA;
-	color: #9E9C9C;
-}
-.navbar__container_search_button {
-	top: 0;
-	right: 0px;
-	width: 42px;
-	height: 30px;
-	border: none;
-	background: #7BA7AB;
-	border-radius: 0 7px 7px 0;
-	cursor: pointer;
-
-}
-
-.imgSearch {
-	max-height: 28px;
-	margin: auto;
 }
 
 .navbar__container_contacts {
@@ -170,7 +145,7 @@ a {
 	margin: 10px;
 	padding: 10px;
 	max-width: 100px;
-	border: solid 1px black;
+	border: solid 1px #ced4da;
 	border-radius: 20px;
 }
 
