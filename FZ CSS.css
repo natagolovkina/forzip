@@ -24,6 +24,10 @@
 	justify-content: center;
 }
 
+a {
+	text-decoration: none;
+}
+
 
 <!--навигационная строка-->
 .navbar {
@@ -122,17 +126,15 @@
 .catalog {}
 
 .catalog__list {
-	margin: 5px 0;
+	margin: 7px 0 5px;
 }
 
 .catalog__list_item {
-	background-color: lightblue;
+	background-color: #8ffaff;
 	background-size: cover;
-	border: solid 1px black;
-	border-radius: 5px;
-	margin: auto 3px;
-	padding: 3px;
-	width: 20%;
+	margin: 10px 0;
+	padding: 6px;
+	width: 18%;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	font-weight: 700;
@@ -141,7 +143,9 @@
 }
 
 <!--основной контент-->
-.content {}
+.content {
+	margin: 5px;
+}
 
 .content__container {}
 
