@@ -4,8 +4,12 @@
 }
 
 .body {
-	padding: 0 15px;
 	margin: 0;
+	padding: 0;
+}
+
+.blocksMargin {
+	margin: 15px 0;
 }
 
 .flex {
@@ -24,8 +28,15 @@
 	justify-content: center;
 }
 
+.flex-direction_column {
+	flex-direction: column;
+}
+
 a {
 	text-decoration: none;
+}
+a:hover {	
+	color: #2196f3;
 }
 
 
@@ -33,7 +44,12 @@ a {
 .navbar {
 	height: auto;
     width: 100%;    
-    align-items: center;
+	align-items: center;
+}
+
+.navbarBackground {
+	background-color: #343a40;
+	background-size: cover;
 }
 
 .navbar__fixed {
@@ -62,7 +78,7 @@ a {
 	width: 75px;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-size: 16px;
-	font-weight: 700;
+	color: white;
 }
 
 .navbar__container_request {}
@@ -71,7 +87,7 @@ a {
 	width: 208px;
 	height: 26px;
 	padding: 0 0 0 10px;
-	border: 2px solid #ced4da;
+	border: 2px solid #696969;
 	border-radius: 7px;
 	outline: none;
 	background: #F9F0DA;
@@ -81,40 +97,53 @@ a {
 
 .imgOnlineRequest {
 	padding: 2px 9px;
-	border: solid 1px #ced4da;
+	border: solid 1px #F9F0DA;
 	border-radius: 7px;
 	max-height: 26px;
 	margin: 0 7px 0 14px;
-	background-color: #F9F0DA;
+	background-color: #343a40;
 	background-size: cover;
 }
 
 .navbar__container_contacts {
-	width: 150px;
+	width: 130px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
-	font-weight: 700;
 	text-align: center;
 }
+
+.navbar__container_contacts_links {
+	color: white;
+}
+
 
 <!--каталог-->
 .catalog {}
 
 .catalog__list {
-	margin: 7px 0 5px;
+	background-color: #f8f9fa;
+	background-size: cover;
+	width: 100%;
 }
 
 .catalog__list_item {
-	background-color: #8ffaff;
-	background-size: cover;
-	margin: 10px 0;
+	margin: 20px 30px;
 	padding: 6px;
-	width: 18%;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-size: 16px;
-	font-weight: 700;
+	font-size: 18px;
 	list-style: none;
 	text-align: center;
+}
+
+.margin-left_auto {
+	margin-left: auto;
+}
+
+.catalog__list_itemText {
+	color: #343a40;
+}
+.catalog__list_itemText:active {
+	color: #2196f3;
 }
 
 <!--основной контент-->
@@ -122,15 +151,42 @@ a {
 	margin: 5px;
 }
 
-.content__container {}
+.content__container {
+	padding: 15px;
+}
+
+.contentBackground {
+	background-color: #e9ecef;
+	background-size: cover;
+}
+
+.content__containerAboutUs {
+	margin: 0 10px;
+	width: 35%;
+	color: #343a40;
+}
+
+.content__containerGoods {
+	margin: 0 10px;
+	width: 55%;
+}
 
 .content__aboutUs_title {
+	margin-bottom: 15px;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-weight: bold;
+	font-size: 20px;
 }
 
 .content__aboutUs_intro {
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+
+.content__goodsCarousele {
+	height: auto;
+	width: 100%;
+	font-size: 26px;
 }
 
 .content__brends {
@@ -156,8 +212,6 @@ a {
 .brendLogoContainer {
 	height: 100px;
 	width: 100px;
-	background-color: white;
-	background-size: cover;
 }
 
 .brendLogo {
@@ -180,20 +234,34 @@ a {
 	word-break: normal;
 }
 
-.content__goodsCarousele {
-	height: 172px;
-	width: 70%;
-	font-size: 32px;
-}
-
 
 <!--подвал-->
-.footer {}
+.footer {
+	padding: 20px auto 5px;	
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	color: #343a40;
+}
+
+.footerBackground {
+	background-color: #f8f9fa;
+	background-size: cover;
+}
+
+.footer__name {	
+	margin: 3px auto;	
+}
 
 .footer_siteMap {
-	margin: 50px auto 20px;
-	color: white;
+	margin: 3px auto;	
 }
+
+
+<!--универсальные-->
+
+
+
 
 
 <!--для проверки-->
