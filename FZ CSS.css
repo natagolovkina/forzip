@@ -9,7 +9,7 @@
 }
 
 .blocksMargin {
-	margin: 15px 0;
+	margin: 10px 0;
 }
 
 .flex {
@@ -42,18 +42,12 @@ a:hover {
 
 <!--навигационная строка-->
 .navbar {
-	height: auto;
-    width: 100%;    
-	align-items: center;
+	width: 100%;
 }
 
 .navbarBackground {
 	background-color: #343a40;
 	background-size: cover;
-}
-
-.navbar__fixed {
-	position: fixed;
 }
 
 .navbar__sticky {
@@ -62,7 +56,8 @@ a:hover {
 }
 
 .navbar__container {
-	margin: 0 5px;
+	margin: 0 25px;
+	height: 53px;
 }
 
 .navbar__container_logoContainer {}
@@ -121,14 +116,14 @@ a:hover {
 .catalog {}
 
 .catalog__list {
+	padding: 15px 0;
 	background-color: #f8f9fa;
 	background-size: cover;
 	width: 100%;
 }
 
 .catalog__list_item {
-	margin: 20px 30px;
-	padding: 6px;
+	margin: 0 30px;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-size: 18px;
 	list-style: none;
@@ -152,7 +147,7 @@ a:hover {
 }
 
 .content__container {
-	padding: 15px;
+	padding: 30px 15px 15px;
 }
 
 .contentBackground {
@@ -168,7 +163,7 @@ a:hover {
 
 .content__containerGoods {
 	margin: 0 10px;
-	width: 55%;
+	width: 65%;
 }
 
 .content__aboutUs_title {
@@ -203,6 +198,8 @@ a:hover {
 	max-width: 100px;
 	border: solid 1px #ced4da;
 	border-radius: 20px;
+	background-color: white;
+	background-size: cover;
 }
 
 .brendCard {
@@ -247,10 +244,7 @@ a:hover {
 .footerBackground {
 	background-color: #f8f9fa;
 	background-size: cover;
-}
-
-.footer__name {	
-	margin: 3px auto;	
+	padding: 15px;
 }
 
 .footer_siteMap {
