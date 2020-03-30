@@ -32,6 +32,18 @@
 	flex-direction: column;
 }
 
+.border_1px {
+	border: 1px solid;
+}
+
+.border-radius_4px {
+	border-radius: 4px;
+}
+
+.border-radius_12px {
+	border-radius: 12px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -68,7 +80,6 @@ a:hover {
 .navbar__container_logo {
 	margin: 0 2px;
 	max-height: 45px;
-	border-radius: 5px;
 }
 
 .navbar__container_name {
@@ -85,8 +96,7 @@ a:hover {
 	width: 208px;
 	height: 26px;
 	padding: 0 0 0 10px;
-	border: 2px solid #696969;
-	border-radius: 7px;
+	border-color: #696969;
 	outline: none;
 	background: #F9F0DA;
 	color: #9E9C9C;
@@ -95,8 +105,7 @@ a:hover {
 
 .imgOnlineRequest {
 	padding: 2px 9px;
-	border: solid 1px #F9F0DA;
-	border-radius: 7px;
+	border-color: #F9F0DA;
 	max-height: 26px;
 	margin: 0 7px 0 14px;
 	background-color: #343a40;
@@ -199,8 +208,7 @@ a:hover {
 	margin: 10px;
 	padding: 10px;
 	max-width: 100px;
-	border: solid 1px #ced4da;
-	border-radius: 20px;
+	border-color: #ced4da;
 	background-color: white;
 	background-size: cover;
 }
