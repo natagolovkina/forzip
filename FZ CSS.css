@@ -196,7 +196,7 @@ a:hover {
 }
 
 .content__brends {
-	width: 70%;
+	padding-top: 40px;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -235,7 +235,7 @@ a:hover {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
-	line-height: 10px;
+	line-height: 14px;
 	color: #007765;
 	text-align: center;
 	word-break: normal;
@@ -262,8 +262,6 @@ a:hover {
 }
 
 
-<!--для проверки-->
-
 .width_70 {
 	width: 70%;
 }
@@ -275,6 +273,8 @@ a:hover {
 .width_90 {
 	width: 90%;
 }
+
+<!--для проверки-->
 
 .background_lightblue {
 	background-color: lightblue;
