@@ -94,11 +94,10 @@ a:hover {
 
 .navbar__container_searchInput {
 	width: 208px;
-	height: 26px;
-	padding: 0 0 0 10px;
+	height: auto;
+	padding: 7px;
 	border-color: #696969;
 	outline: none;
-	background: #F9F0DA;
 	color: #9E9C9C;
 	cursor: pointer;
 }
