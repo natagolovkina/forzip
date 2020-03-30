@@ -10,116 +10,126 @@
 <body>
 <div class="body">
 	
-	<div class="navbar justify-content_space-between">
-		<div class="navbar__container flex">			
-				<a href="" class="navbar__container_logoContainer flex">
-					<img src="logo.jpg" 
-					class="navbar__container_logo">
-					<div class="navbar__container_name">Форзип <br>г. Москва
-					</div>
-				</a>
+	<div class="navbar flex justify-content_space-between align-items_center navbar__sticky navbarBackground">
+		<div class="navbar__container flex">
+			<a href="" class="navbar__container_logoContainer flex align-items_center">
+				<img src="logoForDark.png" 
+				class="navbar__container_logo border-radius_4px">
+				<div class="navbar__container_name"><strong>Форзип</strong> <br>г. Москва
+				</div>
+			</a>
 		</div>		
 
-		<div class="navbar__container flex align-items_center">
-			<form class="navbar__container_search justify-content_space-between flex-direction_row">
-				<input type="text" placeholder="Искать здесь..."
-				class="navbar__container_search_input">
-				<button type="submit"
-				class="navbar__container_search_button"></button>
-			</form>
+		<div class="navbar__container flex align-items_center">			
+			<div class="navbar__container_request flex justify-content_center hidden" id="btnOnlineRequest">
+				<img src="onlineRequestForDark.png" class="imgOnlineRequest border_1px border-radius_4px" 
+				title="ОСТАВИТЬ ЗАЯВКУ">		
+			</div>
+			
+			<input type="text" placeholder="Искать здесь..."
+			class="navbar__container_searchInput border_1px border-radius_4px">
 
 			<div class="navbar__container_contacts">
-				+7-916-854-88-90 info@forzip.ru
+				<a href="tel:+79168548890" class="navbar__container_contacts_links">+7-916-854-88-90</a>
+				<a href="mailto:info@forzip.ru" class="navbar__container_contacts_links">info@forzip.ru</a>
 			</div>
 		</div>		
 	</div>
 
-	<div class="catalog">
-		<ul class="catalog__list justify-content_space-between flex-direction_row">
+	<div class="blocksMargin catalog">
+		<ul class="catalog__list flex">
 			<li class="catalog__list_item">
-				<a href="">Главная</a>
+				<a href=""
+				class="catalog__list_itemText">Главная</a>
 			</li>
 			<li class="catalog__list_item">
-				<a href="">Каталог</a>
+				<a href="" class="catalog__list_itemText">Каталог</a>
 			</li>
 			<li class="catalog__list_item">
-				<a href="">Обслуживание</a>
-			</li>
+				<a href="" class="catalog__list_itemText">Обслуживание</a>
+			</li>			
 			<li class="catalog__list_item">
-				<a href="">Online заявка</a>
+				<a href="" class="catalog__list_itemText">Контакты</a>
 			</li>
-			<li class="catalog__list_item">
-				<a href="">Контакты</a>
+			<li class="catalog__list_item margin-left_auto">
+				<a href="" class="catalog__list_itemText">Online заявка</a>
 			</li>
 		</ul>
 	</div>
 
-	<div class="content">
-		<div class="content__container">
-			<h1 class="content__aboutUs_title">ООО " Форзип"</h1>
-			<p class="content__aboutUs_intro">Фирма ООО "ФОРЗИП" специализируется на обслуживании и ремонте компрессорного оборудования. Фирма предлагает к продаже компрессоры в широком ассортименте для производства сжатого воздуха, а также материалы и комплектующие к ним.</p>
+	<div class="blocksMargin content contentBackground">
+		<div class="content__container flex justify-content_space-between">
+			<div class="content__containerAboutUs">
+				<h1 class="content__aboutUs_title">ООО " Форзип"</h1>
+				<p class="content__aboutUs_intro">Фирма ООО "ФОРЗИП" специализируется на обслуживании и ремонте компрессорного оборудования. Фирма предлагает к продаже компрессоры в широком ассортименте для производства сжатого воздуха, а также материалы и комплектующие к ним.</p>
+			</div>
+
+			<div class="content__containerGoods flex justify-content_center">
+				<div class="content__goodsCarousele flex align-items_center justify-content_center background_white border-radius_12px">
+					ЗДЕСЬ БУДЕТ КАРУСЕЛЬ ТОВАРОВ
+				</div>
+			</div>
 		</div>
 
-		<div class="content__container">
-			<div class="content__brends flex flex-direction_row">
-				<div class="content__brends_card">
+		<div class="content__container flex justify-content_center">
+			<div class="content__brends width_90 flex">
+				<div class="content__brends_card border_1px border-radius_12px">
 					<figure class="brendCard">
-						<img src="brends/remeza.jpg"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/remeza.jpg"
+							class="brendLogo">
+						</div>
 						<figcaption class="brendName">Ремеза (Remeza)</figcaption>
 					</figure>					
 				</div>
 
-				<div class="content__brends_card">
+				<div class="content__brends_card border_1px border-radius_12px">
 					<figure class="brendCard">
-						<img src="brends/aso.jpg"
-						class="brendLogo">
-						<figcaption class="brendName">Винтовые компрессоры Бежецкого завода АСО</figcaption>
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/aso.jpg"
+							class="brendLogo">
+						</div>						
+						<figcaption class="brendName">Бежецкий завод АСО</figcaption>
 					</figure>					
 				</div>
 
-				<div class="content__brends_card">
+				<div class="content__brends_card border_1px border-radius_12px">
 					<figure class="brendCard">
-						<img src="brends/berg.png"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/berg.png"
+							class="brendLogo">
+						</div>
 						<figcaption class="brendName">Берг (Berg)</figcaption>
 					</figure>					
 				</div>
 
-				<div class="content__brends_card">
+				<div class="content__brends_card border_1px border-radius_12px">
 					<figure class="brendCard">
-						<img src="brends/comprag.jpg"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/comprag.jpg"
+							class="brendLogo">
+						</div>						
 						<figcaption class="brendName">Компраг (Comprag)</figcaption>
 					</figure>					
 				</div>
 
-				<div class="content__brends_card">
+				<div class="content__brends_card border_1px border-radius_12px">
 					<figure class="brendCard">
-						<img src="brends/fini.jpg"
-						class="brendLogo">
+						<div class="brendLogoContainer flex align-items_center">
+							<img src="brends/fini.jpg"
+							class="brendLogo">
+						</div>
 						<figcaption class="brendName">Фини (FINI)</figcaption>
 					</figure>					
 				</div>
 			</div>			
-		</div>
+		</div>		
+	</div>
 
-		<div class="content__container">
-			<div class="content__request justify-content_center">
-				<button href="" class="content__requestButton">
-					ОСТАВИТЬ ЗАЯВКУ
-				</button>
-			</div>
-		</div>
-		
-		<div class="content__container">
-			<div class="content__navbar"></div>
-		</div>
-
-		<div class="footer justify-content_center">
-			<a href="" class="footer_siteMap">карта сайта</a>
-		</div>
+	<div class="footer flex flex-direction_column justify-content_center footerBackground">		
+		<a href="" class="footer_siteMap">карта сайта</a>
 	</div>
 </div>
+<script src="navbarOnlineRequest.js"></script>
 </body>
 </html>
