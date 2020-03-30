@@ -1,0 +1,20 @@
+.footer {
+	padding: 20px auto 5px;	
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	color: #343a40;
+}
+
+.footerBackground {
+	background-color: #f8f9fa;
+	background-size: cover;
+	padding: 15px;
+}
+
+.footer_siteMap {
+	margin: 3px auto;
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	color: #343a40;
+	font-size: 16px;
+}

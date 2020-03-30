@@ -1,0 +1,27 @@
+.catalog {}
+
+.catalog__list {
+	padding: 15px 0;
+	background-color: #f8f9fa;
+	background-size: cover;
+	width: 100%;
+}
+
+.catalog__list_item {
+	margin: 0 30px;
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	list-style: none;
+	text-align: center;
+}
+
+.margin-left_auto {
+	margin-left: auto;
+}
+
+.catalog__list_itemText {
+	color: #343a40;
+}
+.catalog__list_itemText:active {
+	color: #2196f3;
+}
