@@ -115,7 +115,7 @@ a:hover {
 	width: 130px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
-	text-align: center;
+	text-align: end;
 }
 
 .navbar__container_contacts_links {
@@ -270,6 +270,10 @@ a:hover {
 
 .width_80 {
 	width: 80%;
+}
+
+.width_90 {
+	width: 90%;
 }
 
 .background_lightblue {
