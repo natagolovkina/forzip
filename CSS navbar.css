@@ -32,8 +32,6 @@
 	color: white;
 }
 
-.navbar__container_request {}
-
 .navbar__container_searchInput {
 	width: 208px;
 	height: auto;
@@ -44,6 +42,11 @@
 	cursor: pointer;
 }
 
+.navbar__container_request {
+	width: 67px;
+	height: 32px;
+}
+
 .imgOnlineRequest {
 	padding: 2px 9px;
 	border-color: #F9F0DA;
@@ -51,10 +54,11 @@
 	margin: 0 7px 0 14px;
 	background-color: #343a40;
 	background-size: cover;
+	cursor: pointer;
 }
 
 .navbar__container_contacts {
-	width: 130px;
+	width: 120px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
 	text-align: end;
