@@ -34,49 +34,6 @@
 	font-size: 16px;
 }
 
-.content__goodsCarousele {
-	height: auto;
-	width: 100%;
-	font-size: 26px;
-}
-
-.content__goodsCarousele_itemContainer {
-	align-content: center;
-	margin: 10px;
-	padding: 5px;
-	max-width: 140px;
-	border-color: #ced4da;
-	cursor: pointer;
-}
-
-.carouselCard {
-	align-content: center;
-}
-
-.carouselCard_imgContainer {
-	height: 135px;
-	width: 135px;
-}
-
-.carouselCard_img {
-	display: block;
-	margin: 0 auto;
-	max-height: 135px;
-	max-width: 135px;
-}
-
-.carouselCard_name {
-	margin-top: 5px;
-	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 18px;
-	color: #007765;
-	text-align: center;
-	word-break: normal;
-}
-
 .content__brends {
 	padding-top: 40px;
 	align-items: center;
