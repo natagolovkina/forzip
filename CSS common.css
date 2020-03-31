@@ -20,6 +20,10 @@
 	align-items: center;
 }
 
+.align-items_start {
+	align-items: flex-start;
+}
+
 .justify-content_space-between {
     justify-content: space-between;
 }
