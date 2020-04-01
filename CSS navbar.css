@@ -44,13 +44,12 @@
 
 .navbar__container_request {
 	width: 67px;
-	height: 32px;
 }
 
 .imgOnlineRequest {
 	padding: 2px 9px;
 	border-color: #F9F0DA;
-	max-height: 26px;
+	max-height: 38px;
 	margin: 0 7px 0 14px;
 	background-color: #343a40;
 	background-size: cover;
