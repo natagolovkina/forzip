@@ -55,6 +55,10 @@ a:hover {
 	display: none;
 }
 
+.max-width {
+	max-width: 1240px;
+}
+
 .width_70 {
 	width: 70%;
 }

@@ -1,9 +1,18 @@
-.catalog {}
+.catalog_outer {
+	width: 100%;
+}
 
-.catalog__list {
-	padding: 15px 0;
+.catalog_inner {
+	margin: 0 auto;
+}
+
+.catalogBackground {
 	background-color: #f8f9fa;
 	background-size: cover;
+}
+
+.catalog__list {
+	padding: 15px 0;	
 	width: 100%;
 }
 

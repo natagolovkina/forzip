@@ -1,5 +1,9 @@
-.navbar {
+.navbar_outer {
 	width: 100%;
+}
+
+.navbar_inner {
+	margin: 0 auto;
 }
 
 .navbarBackground {

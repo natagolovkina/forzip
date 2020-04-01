@@ -1,5 +1,9 @@
-.content {
-	margin: 5px;
+.content_outer {
+	width: 100%;
+}
+
+.content_inner {
+	margin: 0 auto;
 }
 
 .content__container {
