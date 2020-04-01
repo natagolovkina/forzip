@@ -57,6 +57,9 @@
 	background-size: cover;
 	cursor: pointer;
 }
+.content__brends_card:hover {
+	box-shadow: 0 0 10px grey;
+}
 
 .brendCard {
 	align-content: center;
