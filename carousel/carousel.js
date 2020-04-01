@@ -1,4 +1,4 @@
-let step = 168; // ширина элемента, шаг сдвига карусели
+let step = 172; // ширина элемента, шаг сдвига карусели
 let count = 3; // видимое количество изображений
 
 let carousel = document.querySelector('#carouselGoods');
