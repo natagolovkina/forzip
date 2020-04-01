@@ -1,4 +1,4 @@
-.arrow {
+.content__goodsCarousel_arrow {
     position: absolute;
     top: 60px;
     padding: 0;
@@ -10,34 +10,34 @@
     color: #444;
     display: block;
 }  
-.arrow:focus {
+.content__goodsCarousel_arrow:focus {
     outline: none;
 }  
-.arrow:hover {
+.content__goodsCarousel_arrow:hover {
     background: #ccc;
     cursor: pointer;
 }
   
-.prev {
+.prevCarousel {
     left: 7px;
 }
   
-.next {
+.nextCarousel {
     right: 7px;
 }
 
-.content__goodsCarousele {
+.content__goodsCarousel {
 	height: auto;
 	width: 100%;
 	position: relative;
 }
 
-.content__goodsCarousele_galleryWindow {
+.content__goodsCarousel_galleryWindow {
     width: 405px;
     overflow: hidden;
 }
 
-.content__goodsCarousele_gallery {
+.content__goodsCarousel_gallery {
     height: 135px;
     width: 9999px;
     margin: 0;
@@ -49,7 +49,7 @@
     font-size: 0;
 }
 
-.content__goodsCarousele_gallery_item {
+.content__goodsCarousel_gallery_item {
     display: inline-block;
 }
 
@@ -57,7 +57,7 @@
 
 
 
-.content__goodsCarousele_itemContainer {
+.content__goodsCarousel_itemContainer {
 	align-content: center;
 	margin: 10px;
 	padding: 5px;
