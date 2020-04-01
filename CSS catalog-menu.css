@@ -20,8 +20,12 @@
 }
 
 .catalog__list_itemText {
-	color: #343a40;
+	color: #343a40;	
 }
 .catalog__list_itemText:active {
 	color: #2196f3;
+}
+
+.activePage {
+	color: #2196f3
 }
