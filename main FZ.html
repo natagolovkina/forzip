@@ -32,7 +32,7 @@
 				class="navbar__container_searchInput border_1px border-radius_4px">
 
 				<div class="navbar__container_request flex justify-content_center">
-					<img src="common/navbar/onlineRequestForDark.png" class="imgOnlineRequest hidden" id="btnOnlineRequest" 
+					<img src="common/navbar/onlineRequestForDark.png" class="imgOnlineRequest hidden" id="common-btnOnlineRequest" 
 					title="ОСТАВИТЬ ЗАЯВКУ">		
 				</div>
 
@@ -102,59 +102,9 @@
 			</div>
 
 			<div class="content__container flex justify-content_center">
-				<div class="content__brends width_90 flex">
+				<div class="content__brends width_90 flex" id="main-brends">
 
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="main/brends/remeza.jpg"
-								class="brendLogo">
-							</div>
-							<figcaption class="brendName">Ремеза (Remeza)</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="main/brends/aso.jpg"
-								class="brendLogo">
-							</div>						
-							<figcaption class="brendName">Бежецкий завод АСО</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="main/brends/berg.png"
-								class="brendLogo">
-							</div>
-							<figcaption class="brendName">Берг (Berg)</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="main/brends/comprag.jpg"
-								class="brendLogo">
-							</div>						
-							<figcaption class="brendName">Компраг (Comprag)</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="main/brends/fini.jpg"
-								class="brendLogo">
-							</div>
-							<figcaption class="brendName">Фини (FINI)</figcaption>
-						</figure>					
-					</div>
-
-					<template id="mainPage-brendCard">
+					<template>
 						<div class="content__brends_card border_1px border-radius_12px">
 							<figure class="brendCard">
 								<div class="brendLogoContainer flex align-items_center">
@@ -162,9 +112,10 @@
 									class="brendLogo">
 								</div>
 								<figcaption class="brendName"></figcaption>
-							</figure>					
+							</figure>				
 						</div>
 					</template>
+					
 				</div>			
 			</div>		
 		</div>
@@ -179,5 +130,6 @@
 </div>
 <script src="common/navbar/navbarOnlineRequest.js"></script>
 <script src="main/carousel/carousel.js"></script>
+<script src="main/brends/main-brendCards.js"></script>
 </body>
 </html>
