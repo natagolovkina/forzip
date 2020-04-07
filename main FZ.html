@@ -20,7 +20,7 @@
 		<div class="navbar_inner flex justify-content_space-between align-items_center max-width">
 			<div class="navbar__container flex">
 				<a href="" class="navbar__container_logoContainer flex align-items_center">
-					<img src="navbar/logoForDark.png" 
+					<img src="common/navbar/logoForDark.png" 
 					class="navbar__container_logo border-radius_4px">
 					<div class="navbar__container_name"><strong>Форзип</strong> <br>г. Москва
 					</div>
@@ -32,7 +32,7 @@
 				class="navbar__container_searchInput border_1px border-radius_4px">
 
 				<div class="navbar__container_request flex justify-content_center">
-					<img src="navbar/onlineRequestForDark.png" class="imgOnlineRequest hidden" id="btnOnlineRequest" 
+					<img src="common/navbar/onlineRequestForDark.png" class="imgOnlineRequest hidden" id="common-btnOnlineRequest" 
 					title="ОСТАВИТЬ ЗАЯВКУ">		
 				</div>
 
@@ -76,71 +76,24 @@
 				</div>
 
 				<div class="content__containerGoods flex justify-content_center">				
-					<div class="content__goodsCarousel flex align-items_center justify-content_center" id="carouselGoods">
+					<div class="content__goodsCarousel flex align-items_center justify-content_center" id="main-carouselBox">
 						<div class="content__goodsCarousel_arrow prevCarousel border_1px border-radius_4px flex align-items_center">◄</div>
 						<div class="content__goodsCarousel_galleryWindow">
 							<div class="content__goodsCarousel_gallery">
 
-								<div class="content__goodsCarousel_gallery_cardContainer border_1px border-radius_4px hidden">
-									<figure class="carouselCard flex flex-direction_column
-									align-items_center">
-										<div class="carouselCard_imgContainer flex align-items_center">
-											<img src="carousel/1.png" class="carouselCard_img">
-										</div>
-										<figcaption class="carouselCard_name">
-											Компрессор Зубр
-										</figcaption>
-									</figure>
-								</div>							
+								<template>
+									<div class="content__goodsCarousel_gallery_cardContainer border_1px border-radius_4px hidden">
+										<figure class="carouselCard flex flex-direction_column
+										align-items_center">
+											<div class="carouselCard_imgContainer flex align-items_center">
+												<img src="" class="carouselCard_img">
+											</div>
+											<figcaption class="carouselCard_name">
+											</figcaption>
+										</figure>
+									</div>	
+								</template>
 								
-								<div class="content__goodsCarousel_gallery_cardContainer border_1px border-radius_4px hidden">
-									<figure class="carouselCard flex flex-direction_column
-									align-items_center">
-										<div class="carouselCard_imgContainer flex align-items_center">
-											<img src="carousel/2.png" class="carouselCard_img">
-										</div>
-										<figcaption class="carouselCard_name">
-											Ресивер AIRRUS (РКЗ)
-										</figcaption>
-									</figure>
-								</div>
-								
-								<div class="content__goodsCarousel_gallery_cardContainer border_1px border-radius_4px hidden">
-									<figure class="carouselCard flex flex-direction_column
-									align-items_center">
-										<div class="carouselCard_imgContainer flex align-items_center">
-											<img src="carousel/3.png" class="carouselCard_img">
-										</div>
-										<figcaption class="carouselCard_name">
-											Части для компрессоров
-										</figcaption>
-									</figure>
-								</div>
-								
-								<div class="content__goodsCarousel_gallery_cardContainer border_1px border-radius_4px hidden">
-									<figure class="carouselCard flex flex-direction_column
-									align-items_center">
-										<div class="carouselCard_imgContainer flex align-items_center">
-											<img src="carousel/4.png" class="carouselCard_img">
-										</div>
-										<figcaption class="carouselCard_name">
-											Гидрометр
-										</figcaption>
-									</figure>
-								</div>
-
-								<div class="content__goodsCarousel_gallery_cardContainer border_1px border-radius_4px hidden">
-									<figure class="carouselCard flex flex-direction_column
-									align-items_center">
-										<div class="carouselCard_imgContainer flex align-items_center">
-											<img src="carousel/5.png" class="carouselCard_img">
-										</div>
-										<figcaption class="carouselCard_name">
-											Колесо шасси
-										</figcaption>
-									</figure>
-								</div>
-
 							</div>
 						</div>					
 						<div class="content__goodsCarousel_arrow nextCarousel border_1px border-radius_4px flex align-items_center">►</div>
@@ -149,57 +102,20 @@
 			</div>
 
 			<div class="content__container flex justify-content_center">
-				<div class="content__brends width_90 flex">
+				<div class="content__brends width_90 flex" id="main-brends">
 
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="brends/remeza.jpg"
-								class="brendLogo">
-							</div>
-							<figcaption class="brendName">Ремеза (Remeza)</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="brends/aso.jpg"
-								class="brendLogo">
-							</div>						
-							<figcaption class="brendName">Бежецкий завод АСО</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="brends/berg.png"
-								class="brendLogo">
-							</div>
-							<figcaption class="brendName">Берг (Berg)</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="brends/comprag.jpg"
-								class="brendLogo">
-							</div>						
-							<figcaption class="brendName">Компраг (Comprag)</figcaption>
-						</figure>					
-					</div>
-
-					<div class="content__brends_card border_1px border-radius_12px">
-						<figure class="brendCard">
-							<div class="brendLogoContainer flex align-items_center">
-								<img src="brends/fini.jpg"
-								class="brendLogo">
-							</div>
-							<figcaption class="brendName">Фини (FINI)</figcaption>
-						</figure>					
-					</div>
+					<template>
+						<div class="content__brends_card border_1px border-radius_12px">
+							<figure class="brendCard">
+								<div class="brendLogoContainer flex align-items_center">
+									<img src=""
+									class="brendLogo">
+								</div>
+								<figcaption class="brendName"></figcaption>
+							</figure>				
+						</div>
+					</template>
+					
 				</div>			
 			</div>		
 		</div>
@@ -212,7 +128,8 @@
 	</div>
 
 </div>
-<script src="navbar/navbarOnlineRequest.js"></script>
-<script src="carousel/carousel.js"></script>
+<script src="common/navbar/navbarOnlineRequest.js"></script>
+<script src="main/carousel/carousel.js"></script>
+<script src="main/brends/main-brendCards.js"></script>
 </body>
 </html>
