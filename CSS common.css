@@ -56,7 +56,7 @@ a:hover {
 }
 
 .hidden {
-	display: none;
+	visibility: hidden;
 }
 
 .max-width {

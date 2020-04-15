@@ -46,9 +46,7 @@
 	cursor: pointer;
 }
 
-.navbar__container_request {
-	width: 67px;
-}
+.navbar__container_request {}
 
 .imgOnlineRequest {
 	padding: 2px 9px;
