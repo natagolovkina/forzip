@@ -37,7 +37,7 @@
 }
 
 .navbar__container_searchInput {
-	width: 208px;
+	width: 200px;
 	height: auto;
 	padding: 7px;
 	border-color: #696969;
@@ -46,9 +46,7 @@
 	cursor: pointer;
 }
 
-.navbar__container_request {
-	width: 67px;
-}
+.navbar__container_request {}
 
 .imgOnlineRequest {
 	padding: 2px 9px;

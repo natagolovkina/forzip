@@ -28,6 +28,10 @@
     justify-content: space-between;
 }
 
+.justify-content_space-around {
+	justjustify-content: space-around;
+}
+
 .justify-content_center {
 	justify-content: center;
 }
@@ -56,7 +60,11 @@ a:hover {
 }
 
 .hidden {
-	display: none;
+	visibility: hidden;
+}
+
+.box-sizing {
+	box-sizing: border-box;
 }
 
 .max-width {
