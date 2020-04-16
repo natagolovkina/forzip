@@ -43,7 +43,6 @@
 }
 
 .content__goodsCarousel_gallery_cardContainer {
-	align-content: center;
 	margin: 10px;
 	padding: 5px;
     width: 150px;
@@ -52,9 +51,7 @@
 	cursor: pointer;
 }
 
-.carouselCard {
-    align-content: center;
-}
+.carouselCard {}
 
 .carouselCard_imgContainer {
 	height: 135px;
