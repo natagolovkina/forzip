@@ -1,5 +1,6 @@
 .navbar_outer {
 	width: 100%;
+	z-index: 99;
 }
 
 .navbar_inner {
