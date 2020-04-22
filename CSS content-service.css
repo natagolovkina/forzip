@@ -1,0 +1,78 @@
+.content_outer {
+	width: 100%;
+}
+
+.content_inner {
+	margin: 0 auto;
+}
+
+.content__container {
+	padding: 30px 15px 15px;
+}
+
+.contentBackground {
+	background-color: #e9ecef;
+	background-size: cover;
+}
+
+.content__containerService {
+	margin: 0 10px;
+	color: #343a40;
+}
+
+.content__serviceTitle {
+	margin-bottom: 15px;
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.content__serviceText {
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.content__brends {
+	padding-top: 40px;
+	flex-wrap: wrap;
+}
+
+.content__brends_card {
+	margin: 10px;
+	padding: 10px;
+	max-width: 100px;
+	border-color: #ced4da;
+	background-color: white;
+	background-size: cover;
+	cursor: pointer;
+}
+.content__brends_card:hover {
+	box-shadow: 0 0 10px grey;
+}
+
+.brendCard {}
+
+.brendLogoContainer {
+	height: 100px;
+	width: 100px;
+}
+
+.brendLogo {
+	display: block;
+	margin: 0 auto;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.brendName {
+	margin-top: 10px;
+	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+	color: #007765;
+	text-align: center;
+	word-break: normal;
+}

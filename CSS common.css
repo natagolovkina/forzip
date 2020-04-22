@@ -54,7 +54,7 @@
 	border-radius: 12px;
 }
 
-a {
+.text-decoration_none {
 	text-decoration: none;
 }
 a:hover {	
