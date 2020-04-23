@@ -31,11 +31,17 @@
 .justify-content_center {
 	justify-content: center;
 }
+.justify-content_start {
+	justify-content: flex-start;
+}
 .align-items_center {
 	align-items: center;
 }
 .align-items_start {
 	align-items: flex-start;
+}
+.align-items_end {
+	align-items: flex-end;
 }
 .flex-grow_1 {
 	flex-grow: 1;
