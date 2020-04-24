@@ -3,11 +3,11 @@
 <html>
   <head>
 	<meta charset="utf-8">
-	<title>FZ contacts</title>
+	<title>FZ request</title>
 	<link rel="stylesheet" href="CSS common.css">
 	<link rel="stylesheet" href="CSS navbar.css">
 	<link rel="stylesheet" href="CSS catalog-menu.css">
-	<link rel="stylesheet" href="CSS content-contacts.css">
+	<link rel="stylesheet" href="CSS content-request.css">
 	<link rel="stylesheet" href="CSS footer.css">
 	<link rel="stylesheet" href="CSS test-back.css">
   </head>
@@ -58,10 +58,10 @@
 					<a href="service FZ.html" class="catalog__list_itemText text-decoration_none">Обслуживание</a>
 				</li>			
 				<li class="catalog__list_item">
-					<a href="contacts FZ.html" class="catalog__list_itemText text-decoration_none activePage">Контакты</a>
+					<a href="contacts FZ.html" class="catalog__list_itemText text-decoration_none">Контакты</a>
 				</li>
 				<li class="catalog__list_item margin-left_auto">
-					<a href="" class="catalog__list_itemText text-decoration_none">Online заявка</a>
+					<a href="request FZ.html" class="catalog__list_itemText text-decoration_none activePage">Online заявка</a>
 				</li>
 			</ul>
 		</div>
@@ -69,34 +69,40 @@
 
 	<div class="content_outer blocksMargin  contentBackground">
 		<div class="content_inner max-width">
-			<div class="content__container flex justify-content_start">
-				<div class="content__descriptionContainer flex flex-direction_column justify-content_space-between">					
-					<div class="content__descriptionContainer_description">
-						<h1 class="content__descriptionContainer_description_title">Связаться с нами:</h1>
-						<p class="content__descriptionContainer_description_text">E-mail: <a href="mailto:info@forzip.ru">info@forzip.ru</a></p>
-						<p class="content__descriptionContainer_description_text">Телефон: <a href="tel:+79168548890" >8-916-854-88-90</a></p>
-						<div class="content__descriptionContainer_description_messengerContainer flex">		
-							<img src="contacts/viber-logo3.png" alt="" class="messengerLogo">
-							<img src="contacts/whatsapp-logo2.jpg" alt="" class="messengerLogo">							
-							<img src="contacts/telegramm-logo.jpg" alt="" class="messengerLogo">
-						</div>
+			<div class="content__container">
+				<h1 class="content__request_title">Заявка</h1>
+				<div class="content__request_titleDescription descriptionFont">Заполните обязательные поля и нажмите кнопку Отправить</div>
+
+				<div class="content__request_allInputContainers">
+					<div class="content__request_inputContainer flex align-items_center">
+						<div class="content__request_inputContainer_description descriptionFont box-sizing">Тема обращения</div>
+						<select name="themeRequest" id="themeRequest" class="content__request_inputContainer_checkbox box-sizing">
+						<option value="service">обслуживание</option>
+						<option value="buy">покупка</option>
+						<option value="callBack">заказ обратного звонка</option>
+						</select>
 					</div>
-					<div class="content__descriptionContainer_description">
-						<h1 class="content__descriptionContainer_description_title">Режим работы:</h1>
-						<p class="content__descriptionContainer_description_text">Понедельник - Пятница: 8.00 - 19.00</p>
-						<p class="content__descriptionContainer_description_text">Суббота: 8.00 - 14.00</p>
-						<p class="content__descriptionContainer_description_text">Воскресенье: Выходной</p>
+					<div class="content__request_inputContainer flex align-items_center">
+						<div class="content__request_inputContainer_description descriptionFont box-sizing">Ваше имя</div>
+						<input type="text" placeholder="Имя" class="content__request_inputContainer_input box-sizing">
 					</div>
-					<div class="content__descriptionContainer_description">
-						<h1 class="content__descriptionContainer_description_title">Реквизиты:</h1>
-						<p class="content__descriptionContainer_description_text">Название организации: ООО ФОРЗИП</p>
-						<p class="content__descriptionContainer_description_text">ИНН: 9721052280</p>
-						<p class="content__descriptionContainer_description_text">ОГРН: 1177746711680</p>
+					<div class="content__request_inputContainer flex align-items_center">
+						<div class="content__request_inputContainer_description descriptionFont box-sizing">Email</div>
+						<input type="email" placeholder="Example@mail.com" class="content__request_inputContainer_input box-sizing">						
+					</div>
+					<div class="content__request_inputContainer flex align-items_center">
+						<div class="content__request_inputContainer_description descriptionFont box-sizing">Телефон</div>
+						<input type="tel" placeholder="8 (999) 123-45-67" class="content__request_inputContainer_input box-sizing">
+					</div>
+					<div class="content__request_inputContainer flex">
+						<div class="content__request_inputContainer_description descriptionFont box-sizing">Текст заявки</div>
+						<textarea name="textMessege" class="content__request_inputContainer_bigInput"></textarea>
 					</div>
 				</div>
-				<div class="content__mapContainer">
-					<h1 class="content__descriptionContainer_description_title">Как добраться:</h1>
-					<img src="main/pathToGet/map.png" alt="" class="contactsMap">
+
+				<div class="content__request_confirmContainer">
+					<button class="content__request_confirmContainer_btnConfirm">Отправить</button>
+					<div class="content__request_confirmContainer_errCase">ошибка: не заполнен телефон</div>
 				</div>
 			</div>					
 		</div>
