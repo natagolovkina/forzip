@@ -1,0 +1,56 @@
+.content_outer {
+	width: 100%;
+}
+
+.content_inner {
+	margin: 0 auto;
+}
+
+.content__container {
+	padding: 30px 15px 15px;
+}
+
+.contentBackground {
+	background-color: #e9ecef;
+	background-size: cover;
+}
+
+.content__descriptionContainer {
+	color: #343a40;
+	min-height: 450px;
+}
+
+.content__mapContainer {
+	color: #343a40;
+	margin-left: 155px;
+}
+
+.content__descriptionContainer_description {
+	margin: 0 0 0 10px;
+}
+
+.content__descriptionContainer_description_title {
+	margin-bottom: 15px;
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.content__descriptionContainer_description_text {
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.content__descriptionContainer_description_messengerContainer {	
+	margin: 8px;
+}
+
+.messengerLogo {
+	height: 40px;
+	width: 40px;
+	margin: 0 10px;
+	border-radius: 50%;
+}
+
+.contactsMap {}

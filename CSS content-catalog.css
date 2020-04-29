@@ -1,0 +1,83 @@
+.content_outer {
+	width: 100%;
+}
+
+.content_inner {
+	margin: 0 auto;	
+	padding: 30px 30px 15px;
+}
+
+.content__container {}
+
+.contentBackground {
+	background-color: #e9ecef;
+	background-size: cover;
+}
+
+.content__catalog_title {
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.content__catalog_cardContainer {
+	width: 210px;
+	margin: 20px 10px;
+	padding: 5px 5px 8px;
+	border-color: #ced4da;
+}
+.content__catalog_cardContainer:hover {
+	box-shadow: 0 0 10px grey;
+	cursor: pointer;
+}
+
+.catalogCard {}
+
+.catalogCard_imgContainer {
+	height: 200px;
+	width: 200px;
+}
+
+.catalogCard_img {
+	display: block;
+	margin: 0 auto;
+	max-height: 180px;
+	max-width: 180px;
+}
+
+.catalogCard_name {
+	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: #007765;
+	text-align: center;
+	word-break: normal;
+}
+
+.content__filtersContainer {
+	min-width: 200px;
+	margin-left: 20px;
+}
+
+.content__filtersContainer_filtersList {
+	padding: 7px;
+	padding-left: 15px;
+	margin-top: 20px;
+	list-style-type: none;	
+	border-color: #ced4da;
+}
+
+.content__filtersContainer_filtersList_filtersItem {
+	margin: 7px 0;
+	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	color: #007765;
+	word-break: normal;
+	cursor: pointer;
+}
+.content__filtersContainer_filtersList_filtersItem:hover {
+	font-weight: bold;
+}

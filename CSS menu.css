@@ -1,22 +1,22 @@
-.catalog_outer {
+.menu_outer {
 	width: 100%;
 }
 
-.catalog_inner {
+.menu_inner {
 	margin: 0 auto;
 }
 
-.catalogBackground {
+.menuBackground {
 	background-color: #f8f9fa;
 	background-size: cover;
 }
 
-.catalog__list {
+.menu__list {
 	padding: 15px 0;	
 	width: 100%;
 }
 
-.catalog__list_item {
+.menu__list_item {
 	margin: 0 30px;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-size: 18px;
@@ -28,10 +28,10 @@
 	margin-left: auto;
 }
 
-.catalog__list_itemText {
+.menu__list_itemText {
 	color: #343a40;	
 }
-.catalog__list_itemText:active {
+.menu__list_itemText:active {
 	color: #2196f3;
 }
 

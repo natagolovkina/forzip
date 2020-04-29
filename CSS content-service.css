@@ -15,25 +15,20 @@
 	background-size: cover;
 }
 
-.content__containerAboutUs {
+.content__containerService {
 	margin: 0 10px;
-	width: 35%;
 	color: #343a40;
 }
 
-.content__containerGoods {
-	margin: 0 10px;
-	width: 65%;
-}
-
-.content__aboutUs_title {
+.content__serviceTitle {
 	margin-bottom: 15px;
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-weight: bold;
 	font-size: 20px;
 }
 
-.content__aboutUs_intro {
+.content__serviceText {
 	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-size: 16px;
+	margin-top: 15px;
 }

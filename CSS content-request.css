@@ -1,0 +1,73 @@
+.content_outer {
+	width: 100%;
+}
+
+.content_inner {
+	margin: 0 auto;
+}
+
+.content__container {
+	padding: 30px 30px 15px;
+	color: #343a40;
+}
+
+.contentBackground {
+	background-color: #e9ecef;
+	background-size: cover;
+}
+
+.content__request_title {	
+	margin-bottom: 15px;
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 20px;
+}
+
+.content__request_titleDescription {}
+
+.descriptionFont {
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+
+.content__request_allInputContainers {
+	margin: 12px 0 7px;
+}
+
+.content__request_inputContainer {
+	margin: 7px 0;
+}
+
+.content__request_inputContainer_description {
+	width: 135px;
+}
+
+.content__request_inputContainer_checkbox,
+.content__request_inputContainer_input {
+	width: 180px;
+	padding: 5px;
+}
+
+.content__request_inputContainer_bigInput {
+	height: 90px;
+	padding: 5px;
+	width: 40%;
+	min-width: 166px
+}
+
+.content__request_confirmContainer {
+	margin-left: 135px;
+}
+
+.content__request_confirmContainer_btnConfirm {
+	padding: 5px 10px;
+	color: white;
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	background-color: #343a40;
+}
+
+.content__request_confirmContainer_errCase {
+	color: red;
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+}
