@@ -5,11 +5,10 @@ function showBtnOnlineRequest() {
     btnOnlineRequest.classList.remove('hidden')
   } else { btnOnlineRequest.classList.add('hidden') }
 }
-//
-/*
+
 btnOnlineRequest.onclick = function () {
-	//написать сюда ссылку перехода на страницу заявки
+	document.location.href = "HTML request.html";
 }
-*/
+
 // When scrolling, we run the function
 window.onscroll = showBtnOnlineRequest;
