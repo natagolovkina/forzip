@@ -1,19 +1,4 @@
-.content_outer {
-	width: 100%;
-}
-
-.content_inner {
-	margin: 0 auto;
-}
-
-.content__container {
-	padding: 30px 15px 15px;
-}
-
-.contentBackground {
-	background-color: #e9ecef;
-	background-size: cover;
-}
+/*описание content__container в commons.CSS*/
 
 .content__descriptionContainer {
 	color: #343a40;
@@ -25,9 +10,7 @@
 	margin-left: 155px;
 }
 
-.content__descriptionContainer_description {
-	margin: 0 0 0 10px;
-}
+/*.content__descriptionContainer_description {}*/
 
 .content__descriptionContainer_description_title {
 	margin-bottom: 15px;
@@ -53,4 +36,4 @@
 	border-radius: 50%;
 }
 
-.contactsMap {}
+/*.contactsMap {}*/

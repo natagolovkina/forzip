@@ -107,6 +107,7 @@ a:hover {
 	z-index: 99;
 }
 /*.menu_outer {}
+.content_outer {}
 .footer_outer {}*/
 
 .navbarBackground {
@@ -115,14 +116,23 @@ a:hover {
 .menuBackground {
 	background-color: #f8f9fa;
 }
+.contentBackground {
+	background-color: #e9ecef;
+}
 .footerBackground {
 	background-color: #f8f9fa;
 }
 
 .innerContainer{
 	margin: 0 auto;
+	padding: 0 50px;
+}
+.content_inner {		
+	padding-top: 30px;
+	padding-bottom: 15px;
 }
 /*.navbar_inner {}
 .menu_inner {}
 .footer_inner {}*/
 
+/*.content__container {}*/

@@ -1,24 +1,4 @@
-.content_outer {
-	width: 100%;
-}
-
-.content_inner {
-	margin: 0 auto;
-}
-
-.content__container {
-	padding: 30px 15px 15px;
-}
-
-.contentBackground {
-	background-color: #e9ecef;
-	background-size: cover;
-}
-
-.content__containerService {
-	margin: 0 10px;
-	color: #343a40;
-}
+/*описание content__container в commons.CSS*/
 
 .content__serviceTitle {
 	margin-bottom: 15px;

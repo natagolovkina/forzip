@@ -4,11 +4,11 @@
 }
 
 .navbar__container {
-	margin: 0 25px;
+	margin: 0;
 	height: 53px;
 }
 
-.navbar__container_logoContainer {}
+/*.navbar__container_logoContainer {}*/
 
 .navbar__container_logo {
 	margin: 0 2px;
@@ -33,7 +33,7 @@
 	cursor: pointer;
 }
 
-.navbar__container_request {}
+/*.navbar__container_request {}*/
 
 .imgOnlineRequest {
 	padding: 2px 9px;

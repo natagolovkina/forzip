@@ -1,28 +1,11 @@
-.content_outer {
-	width: 100%;
-}
-
-.content_inner {
-	margin: 0 auto;
-}
-
-.content__container {
-	padding: 30px 15px 15px;
-}
-
-.contentBackground {
-	background-color: #e9ecef;
-	background-size: cover;
-}
+/*описание content__container в commons.CSS*/
 
 .content__containerAboutUs {
-	margin: 0 10px;
 	width: 35%;
 	color: #343a40;
 }
 
 .content__containerGoods {
-	margin: 0 10px;
 	width: 65%;
 }
 

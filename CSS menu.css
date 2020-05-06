@@ -10,9 +10,13 @@
 	list-style: none;
 	text-align: center;
 }
+.menu__list_firstItem{
+	margin-left: 0;
+}
 
-.margin-left_auto {
+.menu__list_lastItem {
 	margin-left: auto;
+	margin-right: 0;
 }
 
 .menu__list_itemText {
