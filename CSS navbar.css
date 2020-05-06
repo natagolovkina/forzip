@@ -1,17 +1,3 @@
-.navbar_outer {
-	width: 100%;
-	z-index: 99;
-}
-
-.navbar_inner {
-	margin: 0 auto;
-}
-
-.navbarBackground {
-	background-color: #343a40;
-	background-size: cover;
-}
-
 .navbar__sticky {
 	position: sticky;
 	top: 0;
