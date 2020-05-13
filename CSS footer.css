@@ -1,9 +1,6 @@
 .footer_siteMap {
 	margin: 3px auto;
 	padding: 20px 0 5px;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	color: #343a40;
-	font-size: 16px;
 }
 .footer_siteMap:active {
 	color: #2196f3;

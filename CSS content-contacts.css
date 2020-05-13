@@ -8,21 +8,11 @@
 	margin-left: 155px;
 }
 
-/*.content__descriptionContainer_description {}*/
-
-.content__descriptionContainer_description_title {
-	margin-bottom: 15px;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-weight: bold;
-	font-size: 20px;
-	color: #343a40;
-}
+/*.content__descriptionContainer_description {}
+.content__descriptionContainer_description_title {}*/
 
 .content__descriptionContainer_description_text {
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-size: 16px;
 	margin-top: 5px;
-	color: #343a40;
 }
 
 .content__descriptionContainer_description_messengerContainer {	

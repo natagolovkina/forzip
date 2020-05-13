@@ -1,17 +1,6 @@
 /*описание content__container в commons.CSS*/
 
-.content__request_title {	
-	margin-bottom: 15px;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-size: 20px;
-}
-
-/*.content__request_titleDescription {}*/
-
-.descriptionFont {
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-size: 16px;
-}
+/*.content__request_title {}*/
 
 .content__request_allInputContainers {
 	margin: 12px 0 7px;
@@ -45,13 +34,10 @@
 .content__request_confirmContainer_btnConfirm {
 	padding: 5px 10px;
 	color: white;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-size: 16px;
 	background-color: #343a40;
 }
 
 .content__request_confirmContainer_errCase {
 	color: red;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-size: 14px;
 }

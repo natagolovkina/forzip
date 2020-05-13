@@ -12,7 +12,7 @@ logoImg.classList.add('navbar__container_logo','border-radius_4px');
 logoImg.src = 'common/navbar/logoForDark.png';
 
 let logoName = document.createElement('div');
-logoName.classList.add('navbar__container_name','box-sizing');
+logoName.classList.add('navbar__container_name', 'textFontDefault','box-sizing');
 logoName.innerHTML = "<strong>Форзип</strong> <br><p>г. Москва</p>"; 
 
 logoContainer.append(logoImg,logoName);

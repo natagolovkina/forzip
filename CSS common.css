@@ -156,3 +156,17 @@ a:hover {
 .font-size_18px {
     font-size: 18px;
 }
+/* CONTENT TEXT */
+.titleDefault {
+	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;	
+	color: #343a40;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.textFontDefault {
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;	
+	color: #343a40;
+	font-size: 16px;
+}

@@ -1,14 +1,7 @@
 /*описание content__container в commons.CSS*/
 
-.content__serviceTitle {
-	margin-bottom: 15px;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-weight: bold;
-	font-size: 20px;
-}
+/*.content__serviceTitle {}*/
 
 .content__serviceText {
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-size: 16px;
 	margin-top: 15px;
 }

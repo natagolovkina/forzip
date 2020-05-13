@@ -2,7 +2,7 @@ let menuMainContainer = document.querySelector('#menu-place');
 
 let newMenuItem = function (str,href,id,order) {
     let aItem = document.createElement('a');
-    aItem.classList.add('menu__list_itemText','text-decoration_none');
+    aItem.classList.add('menu__list_itemText', 'textFontDefault', 'text-decoration_none');
     aItem.href = href;
     aItem.id = id;
     aItem.textContent = str;
