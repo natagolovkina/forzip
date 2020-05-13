@@ -1,0 +1,133 @@
+/* ТЕКСТ */
+
+/* ОБЩИЕ */
+.navbar__container_name {
+	margin: 0 16px;
+	width: 75px;
+	//оставить белый цвет, или убрать и добавить класс textColor_white
+	+textFontDefault
+	color: white;
+}
+
+.navbar__container_contacts {
+	width: 120px;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	text-align: end;
+}
+.menu__list_item {
+	margin: 0 30px;
+	+textFontDefault
+	+font-size_18px
+	list-style: none;
+	text-align: center;
+}
+.menu__list_itemText {
+	удалить весь класс
+}
+.menu__list_itemText:active {
+	color: #2196f3;
+}
+.footer_siteMap {
+	margin: 3px auto;
+	padding: 20px 0 5px;
+	+textFontDefault
+}
+.footer_siteMap:active {
+	color: #2196f3;
+}
+
+/* CONTENT TEXT */
+.titleDefault {	
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.textFontDefault {
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;	
+	color: #343a40;
+	font-size: 16px;
+}
+.textColor_white {
+	color: white;
+}
+.textColor_red {
+	color: red;
+}
+
+/* CATALOG */
+.content__catalog_title {    
+	text-align: center;
+    +titleDefault +textFontDefault
+}
+.content__filtersContainer_filtersList_filtersItem {
+	margin: 7px 0;
+	cursor: pointer;
+	+textFontDefault
+}
+.content__filtersContainer_filtersList_filtersItem:hover {
+	font-weight: bold;
+}
+
+/* CONTACTS */
+.content__descriptionContainer_description_title {
+	+titleDefault +textFontDefault
+}
+.content__descriptionContainer_description_text {	
+    margin-top: 5px;
+    +textFontDefault
+}
+
+/* MAIN */
+.content__containerAboutUs {
+	width: 35%;
+}
+.content__aboutUs_title {
+	+titleDefault +textFontDefault
+}
+.content__aboutUs_intro {
+	+textFontDefault
+}
+
+/* REQUEST */
+.content__request_title {	
+	+titleDefault +textFontDefault
+}
+.descriptionFont {remove class
+	+textFontDefault	
+}
+.content__request_confirmContainer_btnConfirm {
+	padding: 5px 10px;
+	color: white;
+	//оставить белый цвет, или убрать и добавить класс textColor_white
+	+textFontDefault
+	background-color: #343a40;
+}
+.content__request_confirmContainer_errCase {
+	color: red;
+	//оставить красный цвет, или убрать и добавить класс textColor_red
+	+textFontDefault  +font-size_14px
+}
+
+/* SERVICE */
+.content__serviceTitle {
+	+titleDefault +textFontDefault
+}
+.content__serviceText {
+	+textFontDefault
+	margin-top: 15px;
+}
+
+/* SITEMAP */
+.content__siteMap_title {
+	+titleDefault +textFontDefault
+}
+
+.siteMap_text {
+	+textFontDefault
+	cursor: pointer;
+}
+.siteMap_text:hover {
+	font-weight: bold;
+}

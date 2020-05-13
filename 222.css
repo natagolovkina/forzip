@@ -1,0 +1,41 @@
+/* CATALOG */
+.content__filtersContainer_filtersList_filtersItem {
+	margin: 7px 0;
+	cursor: pointer;
+	+textFontDefault  +font-size_16px
+}
+/* CONTACTS */
+.content__descriptionContainer_description_text {	
+    margin-top: 5px;
+    +textFontDefault  +font-size_16px
+}
+/* MAIN */
+.content__aboutUs_intro {
+	+textFontDefault  +font-size_16px
+}
+/* REQUEST */
+.descriptionFont {remove class
+	+textFontDefault  +font-size_16px	
+}
+.content__request_confirmContainer_btnConfirm {
+	padding: 5px 10px;
+	color: white;
+	//оставить белый цвет, или убрать и добавить класс textColor_white
+	+textFontDefault  +font-size_16px
+	background-color: #343a40;
+}
+.content__request_confirmContainer_errCase {
+	color: red;
+	//оставить красный цвет, или убрать и добавить класс textColor_red
+	+textFontDefault  +font-size_14px
+}
+/* SERVICE */
+.content__serviceText {
+	+textFontDefault  +font-size_16px
+	margin-top: 15px;
+}
+/* SITEMAP */
+.siteMap_text {
+	+textFontDefault  +font-size_16px
+	cursor: pointer;
+}
