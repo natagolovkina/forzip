@@ -1,4 +1,13 @@
-let menuMainContainer = document.querySelector('#menu-place');
+let menuOuterContainer = document.querySelector('#menu-place');
+menuOuterContainer.classList.add('menu_outer', 'outerContainer', 'blocksMargin', 'menuBackground');
+
+let menuInnerContainer = document.createElement('div');
+menuInnerContainer.classList.add('menu_inner', 'innerContainer', 'max-width');
+menuOuterContainer.append(menuInnerContainer);
+
+let menuList = document.createElement('ul');
+menuList.classList.add('menu__list', 'flex');
+menuInnerContainer.append(menuList);
 
 let newMenuItem = function (str,href,id,order) {
     let aItem = document.createElement('a');
@@ -15,7 +24,7 @@ let newMenuItem = function (str,href,id,order) {
         liItem.classList.add('menu__list_lastItem');
     };
     liItem.append(aItem);
-    menuMainContainer.append(liItem);
+    menuList.append(liItem);
 };
 
 //Главная

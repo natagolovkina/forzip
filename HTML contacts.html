@@ -10,26 +10,17 @@
 	<link rel="stylesheet" href="CSS menu.css">
 	<link rel="stylesheet" href="CSS content-contacts.css">
 	<link rel="stylesheet" href="CSS footer.css">
-	<link rel="stylesheet" href="CSS test-back.css">
   </head>
 
 <body>
 <div class="body">
 	
-	<div class="navbar_outer outerContainer navbar__sticky navbarBackground">
-		<div class="navbar_inner innerContainer flex justify-content_space-between align-items_center max-width" id="navbar-place">
-		</div>
-	</div>
+	<div id="navbar-place"></div>
 	
-	<div class="menu_outer outerContainer blocksMargin menuBackground">
-		<div class="menu_inner innerContainer max-width">
-			<ul class="menu__list flex" id="menu-place">				
-			</ul>
-		</div>
-	</div>
+	<div id="menu-place"></div>
 
-	<div class="content_outer outerContainer blocksMargin contentBackground">
-		<div class="content_inner innerContainer max-width">
+	<div id="content-place">
+		<div>
 			<div class="content__container flex justify-content_start">
 				<div class="content__descriptionContainer flex flex-direction_column justify-content_space-between">					
 					<div class="content__descriptionContainer_description">
@@ -63,15 +54,13 @@
 		</div>
 	</div>
 
-	<div class="footer_outer outerContainer footerBackground">
-		<div class="footer_inner innerContainer flex flex-direction_column justify-content_center max-width" id="footer-place">				
-		</div>
-	</div>
+	<div id="footer-place"></div>
 
 </div>
 <script src="common/navbar/navbarLoader.js"></script>
 <script src="common/menu/menuLoader.js"></script>
 <script src="common/menu/menu-activePage-contacts.js"></script>
+<script src="common/content/contentLoader.js"></script>
 <script src="common/footer/footerLoader.js"></script>
 <script src="common/navbar/navbarOnlineRequest.js"></script>
 </body>
