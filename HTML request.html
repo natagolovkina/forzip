@@ -4,38 +4,30 @@
   <head>
 	<meta charset="utf-8">
 	<title>FZ request</title>
+	<link rel="icon" href="common/navbar/logo.jpg" type="image/jpeg">
 	<link rel="stylesheet" href="CSS common.css">
 	<link rel="stylesheet" href="CSS navbar.css">
 	<link rel="stylesheet" href="CSS menu.css">
 	<link rel="stylesheet" href="CSS content-request.css">
 	<link rel="stylesheet" href="CSS footer.css">
-	<link rel="stylesheet" href="CSS test-back.css">
   </head>
 
 <body>
 <div class="body">
 	
-	<div class="navbar_outer navbar__sticky navbarBackground">
-		<div class="navbar_inner flex justify-content_space-between align-items_center max-width" id="navbar-place">
-		</div>
-	</div>
+	<div id="navbar-place"></div>
+	
+	<div id="menu-place"></div>
 
-	<div class="menu_outer blocksMargin menuBackground">
-		<div class="menu_inner max-width">
-			<ul class="menu__list flex" id="menu-place">				
-			</ul>
-		</div>
-	</div>
-
-	<div class="content_outer blocksMargin  contentBackground">
-		<div class="content_inner max-width">
+	<div id="content-place">
+		<div>
 			<div class="content__container">
-				<h1 class="content__request_title">Заявка</h1>
-				<div class="content__request_titleDescription descriptionFont">Заполните обязательные поля и нажмите кнопку Отправить</div>
+				<h1 class="content__request_title titleDefault">Заявка</h1>
+				<div class="textFontDefault font-size_18px">Заполните обязательные поля и нажмите кнопку Отправить</div>
 
 				<div class="content__request_allInputContainers">
 					<div class="content__request_inputContainer flex align-items_center">
-						<div class="content__request_inputContainer_description descriptionFont box-sizing">Тема обращения</div>
+						<div class="content__request_inputContainer_description textFontDefault box-sizing">Тема обращения</div>
 						<select name="themeRequest" id="themeRequest" class="content__request_inputContainer_checkbox box-sizing">
 						<option value="service">обслуживание</option>
 						<option value="buy">покупка</option>
@@ -43,40 +35,38 @@
 						</select>
 					</div>
 					<div class="content__request_inputContainer flex align-items_center">
-						<div class="content__request_inputContainer_description descriptionFont box-sizing">Ваше имя</div>
+						<div class="content__request_inputContainer_description textFontDefault box-sizing">Ваше имя</div>
 						<input type="text" placeholder="Имя" class="content__request_inputContainer_input box-sizing">
 					</div>
 					<div class="content__request_inputContainer flex align-items_center">
-						<div class="content__request_inputContainer_description descriptionFont box-sizing">Email</div>
+						<div class="content__request_inputContainer_description textFontDefault box-sizing">Email</div>
 						<input type="email" placeholder="Example@mail.com" class="content__request_inputContainer_input box-sizing">						
 					</div>
 					<div class="content__request_inputContainer flex align-items_center">
-						<div class="content__request_inputContainer_description descriptionFont box-sizing">Телефон</div>
+						<div class="content__request_inputContainer_description textFontDefault box-sizing">Телефон</div>
 						<input type="tel" placeholder="8 (999) 123-45-67" class="content__request_inputContainer_input box-sizing">
 					</div>
 					<div class="content__request_inputContainer flex">
-						<div class="content__request_inputContainer_description descriptionFont box-sizing">Текст заявки</div>
+						<div class="content__request_inputContainer_description textFontDefault box-sizing">Текст заявки</div>
 						<textarea name="textMessege" class="content__request_inputContainer_bigInput"></textarea>
 					</div>
 				</div>
 
 				<div class="content__request_confirmContainer">
-					<button class="content__request_confirmContainer_btnConfirm">Отправить</button>
-					<div class="content__request_confirmContainer_errCase">ошибка: не заполнен телефон</div>
+					<button class="content__request_confirmContainer_btnConfirm textFontDefault">Отправить</button>
+					<div class="content__request_confirmContainer_errCase textFontDefault">ошибка: не заполнен телефон</div>
 				</div>
 			</div>					
 		</div>
 	</div>
 
-	<div class="footer_outer footerBackground">
-		<div class="footer_inner flex flex-direction_column justify-content_center max-width" id="footer-place">				
-		</div>
-	</div>
+	<div id="footer-place"></div>
 
 </div>
 <script src="common/navbar/navbarLoader.js"></script>
 <script src="common/menu/menuLoader.js"></script>
 <script src="common/menu/menu-activePage-request.js"></script>
+<script src="common/content/contentLoader.js"></script>
 <script src="common/footer/footerLoader.js"></script>
 <script src="common/navbar/navbarOnlineRequest.js"></script>
 </body>

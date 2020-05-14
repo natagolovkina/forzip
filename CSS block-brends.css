@@ -16,7 +16,7 @@
 	box-shadow: 0 0 10px grey;
 }
 
-.brendCard {}
+/*.brendCard {}*/
 
 .brendLogoContainer {
 	height: 100px;
@@ -32,12 +32,4 @@
 
 .brendName {
 	margin-top: 10px;
-	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 14px;
-	color: #007765;
-	text-align: center;
-	word-break: normal;
 }

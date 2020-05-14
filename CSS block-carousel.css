@@ -51,7 +51,7 @@
 	cursor: pointer;
 }
 
-.carouselCard {}
+/*.carouselCard {}*/
 
 .carouselCard_imgContainer {
 	height: 135px;
@@ -67,13 +67,5 @@
 }
 
 .carouselCard_name {
-	margin-top: 5px;
-	font-family: 'Roboto', 'Helvetica Nue', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 14px;
-	color: #007765;
-	text-align: center;
-	word-break: normal;
+    margin-top: 5px;
 }

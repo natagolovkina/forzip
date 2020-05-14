@@ -1,22 +1,34 @@
-let menuMainContainer = document.querySelector('#menu-place');
+let menuOuterContainer = document.querySelector('#menu-place');
+menuOuterContainer.classList.add('menu_outer', 'outerContainer', 'blocksMargin', 'menuBackground');
 
-let newMenuItem = function (str,href,id) {
+let menuInnerContainer = document.createElement('div');
+menuInnerContainer.classList.add('menu_inner', 'innerContainer', 'max-width');
+menuOuterContainer.append(menuInnerContainer);
+
+let menuList = document.createElement('ul');
+menuList.classList.add('menu__list', 'flex');
+menuInnerContainer.append(menuList);
+
+let newMenuItem = function (str,href,id,order) {
     let aItem = document.createElement('a');
-    aItem.classList.add('menu__list_itemText','text-decoration_none');
+    aItem.classList.add('menu__list_itemText', 'textFontDefault', 'text-decoration_none');
     aItem.href = href;
     aItem.id = id;
     aItem.textContent = str;
     let liItem = document.createElement('li');
     liItem.classList.add('menu__list_item');
-    if (str === 'Online заявка') {
-        liItem.classList.add('margin-left_auto');
+    if (order === 'first') {
+        liItem.classList.add('menu__list_firstItem');
+    };
+    if (order === 'last') {
+        liItem.classList.add('menu__list_lastItem');
     };
     liItem.append(aItem);
-    menuMainContainer.append(liItem);
+    menuList.append(liItem);
 };
 
 //Главная
-newMenuItem('Главная','HTML main.html','menu-main');
+newMenuItem('Главная','HTML main.html','menu-main','first');
 
 //Каталог
 newMenuItem('Каталог','HTML catalog.html','menu-catalog');
@@ -28,4 +40,4 @@ newMenuItem('Обслуживание','HTML service.html','menu-service');
 newMenuItem('Контакты','HTML contacts.html','menu-contacts');
 
 //Online заявка
-newMenuItem('Online заявка','HTML request.html','menu-request');
+newMenuItem('Online заявка','HTML request.html','menu-request','last');

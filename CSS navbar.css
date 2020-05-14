@@ -1,28 +1,14 @@
-.navbar_outer {
-	width: 100%;
-	z-index: 99;
-}
-
-.navbar_inner {
-	margin: 0 auto;
-}
-
-.navbarBackground {
-	background-color: #343a40;
-	background-size: cover;
-}
-
 .navbar__sticky {
 	position: sticky;
 	top: 0;
 }
 
 .navbar__container {
-	margin: 0 25px;
+	margin: 0;
 	height: 53px;
 }
 
-.navbar__container_logoContainer {}
+/*.navbar__container_logoContainer {}*/
 
 .navbar__container_logo {
 	margin: 0 2px;
@@ -32,8 +18,6 @@
 .navbar__container_name {
 	margin: 0 16px;
 	width: 75px;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-	font-size: 16px;
 	color: white;
 }
 
@@ -47,7 +31,7 @@
 	cursor: pointer;
 }
 
-.navbar__container_request {}
+/*.navbar__container_request {}*/
 
 .imgOnlineRequest {
 	padding: 2px 9px;

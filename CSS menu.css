@@ -1,16 +1,3 @@
-.menu_outer {
-	width: 100%;
-}
-
-.menu_inner {
-	margin: 0 auto;
-}
-
-.menuBackground {
-	background-color: #f8f9fa;
-	background-size: cover;
-}
-
 .menu__list {
 	padding: 15px 0;	
 	width: 100%;
@@ -18,19 +5,19 @@
 
 .menu__list_item {
 	margin: 0 30px;
-	font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 	font-size: 18px;
 	list-style: none;
 	text-align: center;
 }
-
-.margin-left_auto {
+.menu__list_firstItem{
+	margin-left: 0;
+}
+.menu__list_lastItem {
 	margin-left: auto;
+	margin-right: 0;
 }
 
-.menu__list_itemText {
-	color: #343a40;	
-}
+/*.menu__list_itemText {}*/
 .menu__list_itemText:active {
 	color: #2196f3;
 }
