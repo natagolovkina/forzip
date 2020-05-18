@@ -110,6 +110,10 @@ a:hover {
 	visibility: hidden;
 }
 
+.display_none {
+	display: none;
+}
+
 .box-sizing {
 	box-sizing: border-box;
 }
