@@ -28,5 +28,8 @@
 	width: 40px;
 	border-radius: 50%;
 }
+.messengerLogo:hover {
+	box-shadow: 0 0 10px grey;
+}
 
 /*.contactsMap {}*/
