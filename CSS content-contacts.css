@@ -16,14 +16,20 @@
 }
 
 .content__descriptionContainer_description_messengerContainer {	
-	margin: 8px;
+	margin: 8px 0;
+}
+
+.messengerLink {
+	margin-right: 20px;
 }
 
 .messengerLogo {
 	height: 40px;
 	width: 40px;
-	margin: 0 10px;
 	border-radius: 50%;
+}
+.messengerLogo:hover {
+	box-shadow: 0 0 10px grey;
 }
 
 /*.contactsMap {}*/
