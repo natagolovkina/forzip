@@ -1,5 +1,22 @@
 .itemContainer {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+.itemContainer_imgContainer {
+    min-width: 300px;
+	background-size: cover;
+    background-color: white;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.itemImg {
+    max-height: 280px;
+    max-width: 280px;
+}
+
+.itemContainer_tableContainer {
+    width: 100%;
 }
 
 .itemTable {
@@ -9,7 +26,6 @@
     text-align: center;
 }
 
-.itemImg {
-    max-width: 300px;
-    margin-right: 15px ;
+.itemNote {
+    margin-left: 15px;
 }

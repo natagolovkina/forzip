@@ -41,5 +41,3 @@ newMenuItem('Контакты','HTML contacts.html','menu-contacts');
 
 //Online заявка
 newMenuItem('Online заявка','HTML request.html','menu-request','last');
-
-console.log(menuList)
