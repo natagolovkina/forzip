@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_navbarLoader_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/navbarLoader.js */ \"./src/js/navbarLoader.js\");\n\r\nObject(_js_navbarLoader_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_navbarLoader_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/navbarLoader.js */ \"./src/js/navbarLoader.js\");\n/* harmony import */ var _js_menuLoader_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/menuLoader.js */ \"./src/js/menuLoader.js\");\n\r\nObject(_js_navbarLoader_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n\r\nObject(_js_menuLoader_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/menuLoader.js":
+/*!******************************!*\
+  !*** ./src/js/menuLoader.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nlet menuModule = function () {\r\n    let menuOuterContainer = document.querySelector('#menu-place');\r\n    menuOuterContainer.classList.add('menu_outer', 'outerContainer', 'blocksMargin', 'menuBackground');\r\n\r\n    let menuInnerContainer = document.createElement('div');\r\n    menuInnerContainer.classList.add('menu_inner', 'innerContainer', 'max-width');\r\n    menuOuterContainer.append(menuInnerContainer);\r\n\r\n    let menuList = document.createElement('ul');\r\n    menuList.classList.add('menu__list', 'flex');\r\n    menuInnerContainer.append(menuList);\r\n\r\n    let newMenuItem = function (str,href,id,order) {\r\n        let aItem = document.createElement('a');\r\n        aItem.classList.add('menu__list_itemText', 'textFontDefault', 'text-decoration_none');\r\n        aItem.href = href;\r\n        aItem.id = id;\r\n        aItem.textContent = str;\r\n        let liItem = document.createElement('li');\r\n        liItem.classList.add('menu__list_item');\r\n        if (order === 'first') {\r\n            liItem.classList.add('menu__list_firstItem');\r\n        };\r\n        if (order === 'last') {\r\n            liItem.classList.add('menu__list_lastItem');\r\n        };\r\n        liItem.append(aItem);\r\n        menuList.append(liItem);\r\n    };\r\n\r\n    //Главная\r\n    newMenuItem('Главная','HTML main.html','menu-main','first');\r\n\r\n    //Каталог\r\n    newMenuItem('Каталог','HTML catalog.html','menu-catalog');\r\n\r\n    //Обслуживание\r\n    newMenuItem('Обслуживание','HTML service.html','menu-service');\r\n\r\n    //Контакты\r\n    newMenuItem('Контакты','HTML contacts.html','menu-contacts');\r\n\r\n    //Online заявка\r\n    newMenuItem('Online заявка','HTML request.html','menu-request','last');\r\n};\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (menuModule);\n\n//# sourceURL=webpack:///./src/js/menuLoader.js?");
 
 /***/ }),
 
