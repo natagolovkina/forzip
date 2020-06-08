@@ -5,17 +5,20 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/natagolovkina/forzip.git"
   },
-  "author": "DenSpar",
+  "author": "DenSpar <denis.vorobev@list.ru>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/natagolovkina/forzip/issues"
