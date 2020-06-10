@@ -1,0 +1,55 @@
+.navbar__sticky {
+	position: sticky;
+	top: 0;
+}
+
+.navbar__container {
+	margin: 0;
+	height: 53px;
+}
+
+/*.navbar__container_logoContainer {}*/
+
+.navbar__container_logo {
+	margin: 0 2px;
+	max-height: 45px;
+}
+
+.navbar__container_name {
+	margin: 0 16px;
+	width: 75px;
+	color: white;
+}
+
+.navbar__container_searchInput {
+	width: 200px;
+	height: auto;
+	padding: 7px;
+	border-color: #696969;
+	outline: none;
+	color: #9E9C9C;
+	cursor: pointer;
+}
+
+/*.navbar__container_request {}*/
+
+.imgOnlineRequest {
+	padding: 2px 9px;
+	border-color: #F9F0DA;
+	max-height: 38px;
+	margin: 0 7px 0 14px;
+	background-color: #343a40;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.navbar__container_contacts {
+	width: 120px;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	text-align: end;
+}
+
+.navbar__container_contacts_links {
+	color: white;
+}
