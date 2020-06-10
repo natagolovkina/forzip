@@ -1,9 +1,5 @@
-/*
-чтобы подгрузить JS
-import navbarModule from './js/navbarLoader.js';
-navbarModule();
-*/
-import foo from './js/foo.js';
+//чтобы подгрузить JS
+import foo from '@js/foo';
 foo();
 //чтобы подгрузить CSS
 import './styles/styles.css';
