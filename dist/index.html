@@ -9,13 +9,14 @@
 
   <body>
 	<div class="body">	
-		<div class="navbar_outer navbar__sticky navbarBackground">
-			<div class="navbar_inner flex justify-content_space-between align-items_center max-width">
+		<div class="navbar_outer outerContainer navbar__sticky navbarBackground">
+			<div class="navbar_inner innerContainer flex justify-content_space-between align-items_center max-width">
 				<div class="navbar__container flex">
-					<a href="main FZ.html" class="navbar__container_logoContainer flex align-items_center text-decoration_none">
-						<img src="logoForDark.png"
-						class="navbar__container_logo border-radius_4px">
-						<div class="navbar__container_name box-sizing"><strong>Форзип</strong> <br>г. Москва
+					<a href="HTML main.html" class="navbar__container_logoContainer flex align-items_center text-decoration_none">
+						<img src=url(../assets/logoForDark.png)
+						class="navbar__container_logo border-radius_4px"
+						id="navbar-logo">
+						<div class="navbar__container_name textFontDefault box-sizing"><strong>Форзип</strong> <br>г. Москва
 						</div>
 					</a>
 				</div>		
@@ -26,7 +27,7 @@
 					class="navbar__container_searchInput box-sizing border_1px border-radius_4px">
 	
 					<div class="navbar__container_request flex justify-content_center">
-						<img src="common/navbar/onlineRequestForDark.png" class="imgOnlineRequest hidden" id="common-btnOnlineRequest" 
+						<img src="" class="imgOnlineRequest hidden" id="navbar-btnOnlineRequest" 
 						title="ОСТАВИТЬ ЗАЯВКУ">		
 					</div>
 	
@@ -38,41 +39,51 @@
 			</div>
 		</div>
 	
-		<div class="menu_outer blocksMargin menuBackground">
-			<div class="menu_inner max-width">
+		<div class="menu_outer outerContainer blocksMargin menuBackground">
+			<div class="menu_inner innerContainer max-width">
 				<ul class="menu__list flex">
-					<li class="menu__list_item">
+					<li class="menu__list_item menu__list_firstItem">
 						<a href="HTML main.html"
-						class="menu__list_itemText text-decoration_none robotoFontTest activePage">Главная</a>
+						class="menu__list_itemText textFontDefault text-decoration_none">Главная</a>
 					</li>
 					<li class="menu__list_item">
-						<a href="HTML catalog.html" class="menu__list_itemText text-decoration_none textFontDefault">Каталог</a>
+						<a href="HTML catalog.html" class="menu__list_itemText textFontDefault text-decoration_none">Каталог</a>
 					</li>
 					<li class="menu__list_item">
-						<a href="HTML service.html" class="menu__list_itemText text-decoration_none textFontDefault">Обслуживание</a>
+						<a href="HTML service.html" class="menu__list_itemText textFontDefault text-decoration_none">Обслуживание</a>
 					</li>			
 					<li class="menu__list_item">
-						<a href="HTML contacts.html" class="menu__list_itemText text-decoration_none textFontDefault">Контакты</a>
+						<a href="HTML contacts.html" class="menu__list_itemText textFontDefault text-decoration_none">Контакты</a>
 					</li>
-					<li class="menu__list_item margin-left_auto">
-						<a href="HTML request.html" class="menu__list_itemText text-decoration_none textFontDefault">Online заявка</a>
+					<li class="menu__list_item menu__list_lastItem">
+						<a href="HTML request.html" class="menu__list_itemText textFontDefault text-decoration_none">Online заявка</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	
-		<div class="content_outer blocksMargin  contentBackground">
-			<div class="content_inner max-width flex">
+		<div class="content_outer outerContainer blocksMargin contentBackground">
+			<div class="content_inner innerContainer max-width flex flex-direction_column">
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
+				<h1>some content</h1>
 			</div>
 		</div>
 	
-		<div class="footer_outer footerBackground">
-			<div class="footer_inner flex flex-direction_column justify-content_center max-width">		
-				<a href="HTML siteMap.html" class="footer_siteMap text-decoration_none">карта сайта</a>
+		<div class="footer_outer outerContainer footerBackground">
+			<div class="footer_inner innerContainer flex flex-direction_column justify-content_center max-width">		
+				<a href="HTML siteMap.html" class="footer_siteMap textFontDefault text-decoration_none">карта сайта</a>
 			</div>
 		</div>
 	
 	</div>
-  <script src="vendors~main.9d221135831e1f81f45f.js"></script><script src="main.c5e5c84f46d5c38245cb.js"></script></body> 
+  <script src="vendors~main.9d221135831e1f81f45f.js"></script><script src="main.d7f20c187797ff2a73c8.js"></script></body> 
 </html>
 
