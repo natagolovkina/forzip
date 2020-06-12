@@ -47,7 +47,7 @@ let itemsArr = [
         {model:"ВК15Е-8(10,15)-500Д(ВС)", volume:"500", pressure:"8/10/15", productivity:"1650/1400/1100", capacity:"11,0", noise:"75", weight:"505", size:"2030 х 750 х 1585", output:"G3/4"},
         {model:"ВК20Е-8(10,15)-500Д(ВС)", volume:"500", pressure:"8/10/15", productivity:"2150/1900/1400", capacity:"15,0", noise:"66", weight:"585", size:"1930 х 810 х 1760", output:"G3/4"}
         ],
-        itemNotes: ['ВС - частотно-регулируемый привод']
+        itemNotes: ['Д - встроенный осушитель холодильного типа', 'ВС - частотно-регулируемый привод']
     },
     {itemName:"R004",
     itemNumber: "R004",

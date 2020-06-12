@@ -4,9 +4,9 @@ foo(1);
 //чтобы подгрузить CSS
 import './styles/styles.css';
 
-//чтобы подгрузить JPG PNG
+/*чтобы подгрузить JPG PNG
 import logoForDark from '@/assets/logoForDark.png';
-console.log(logoForDark);
+console.log(logoForDark);*/
 
 foo(2);
 
