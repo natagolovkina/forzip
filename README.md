@@ -91,19 +91,21 @@ Initial commit
 начал настраивать webpack и вернул html-шаблон из старых коммитов. Настроил очистку папки dist перед очередной сборкой билда
 
 10.06.20 
-1)установил плагины для очистки папки dist
-2)настроил загрузку CSS-ов с normlize.css
-3)настроил загрузку изображений
-4)установил и подключил шрифт Roboto
-5)настроил сокращенные абсолютные пути
-6)файлы без указанного расширения будут по дефолту восприниматься как js или json
-7)оптимизировал одинаковые импорты
+1)настроил загрузку CSS-ов с normlize.css
+2)настроил загрузку изображений
+3)установил и подключил шрифт Roboto
+4)настроил сокращенные абсолютные пути
+5)файлы без указанного расширения будут по дефолту восприниматься как js или json
+6)оптимизировал одинаковые импорты
 
 11.06.20
 актуализировал html-шаблон
 
 12.06.20
 установил и настроил copy-webpack-plugin
+
+15.06.20
+минимизировал HTML, CSS и JS файлы, при сборка режиме прода
 
 
 Commits on May 29, 2020
@@ -247,73 +249,24 @@ DenSpar committed on 27 Apr
 @DenSpar
 DenSpar committed on 27 Apr
  
-Commits on Apr 24, 2020
+24.04.20
 сверстал скелет страницы онлайн-заявки
-
-@DenSpar
-DenSpar committed on 24 Apr
  
-Commits on Apr 23, 2020
+23.04.20
 сверстал страницу Контакты
 
-@DenSpar
-DenSpar committed on 23 Apr
-Commits on Apr 22, 2020
-выделил для брендов отдельный CSS
+22.04.20
+1)сверстал страницу обслуживание
+2)выделил для брендов отдельный CSS
 
-@DenSpar
-DenSpar committed on 22 Apr
- 
-сверстал страницу обслуживание
 
-@DenSpar
-DenSpar committed on 22 Apr
- 
-Merge pull request #35 from natagolovkina/27-nav-z-index …
-
-@DenSpar
-DenSpar committed on 22 Apr
-  
-Commits on Apr 21, 2020
+21.04.20
 добавил свойство z-index навбару, теперь он прорисован выше всех
 
-@DenSpar
-DenSpar committed on 21 Apr
- 
-Commits on Apr 16, 2020
-carousel card fix
+16.04.20
+пофиксил карточки брендов и карусели
 
-@DenSpar
-DenSpar committed on 16 Apr
- 
-brends card fix
-
-@DenSpar
-DenSpar committed on 16 Apr
- 
-Commits on Apr 15, 2020
-Merge pull request #32 from natagolovkina/31-box-sizing-visibility …
-
-@DenSpar
-DenSpar committed on 15 Apr
-  
-добавил класс box-sizing
-
-@DenSpar
-DenSpar committed on 15 Apr
- 
-переделал класс кнопки ОСТАВИТЬ ЗАЯВКУ на visibility:hidden …
-
-@DenSpar
-DenSpar committed on 15 Apr
- 
-Commits on Apr 7, 2020
-Merge pull request #29 from natagolovkina/20-2-carousel …
-
-@DenSpar
-DenSpar committed on 7 Apr
-  
-Merge pull request #30 from natagolovkina/20-1-brends …
-
-@DenSpar
-DenSpar committed on 7 Apr
+15.04.20
+1)переделал класс кнопки ОСТАВИТЬ ЗАЯВКУ на visibility:hidden
+2)нашел-исправил ошибку в шаблоне карточки карусели
+3)добавил класс box-sizing
