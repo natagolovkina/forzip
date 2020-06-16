@@ -1,0 +1,176 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*.body {}*/
+
+
+.outerContainer {
+	width: 100%;
+	background-size: cover;
+}
+.navbar_outer {	
+	z-index: 99;
+}
+/*.menu_outer {}
+.content_outer {}
+.footer_outer {}*/
+
+.navbarBackground {
+	background-color: #343a40;
+}
+.menuBackground {
+	background-color: #f8f9fa;
+}
+.contentBackground {
+	background-color: #e9ecef;
+}
+.footerBackground {
+	background-color: #f8f9fa;
+}
+
+.innerContainer{
+	margin: 0 auto;
+	padding: 0 50px;
+}
+.content_inner {		
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+/*.navbar_inner {}
+.menu_inner {}
+.footer_inner {}*/
+
+/*.content__container {}*/
+
+.blocksMargin {
+	margin: 10px 0;
+}
+
+.margin_auto {
+	margin: auto;
+}
+
+.flex {
+	display: flex;
+}
+.flex-direction_column {
+	flex-direction: column;
+}
+.justify-content_space-between {
+    justify-content: space-between;
+}
+.justify-content_space-around {
+	justify-content: space-around;
+}
+.justify-content_center {
+	justify-content: center;
+}
+.justify-content_start {
+	justify-content: flex-start;
+}
+.align-items_center {
+	align-items: center;
+}
+.align-items_start {
+	align-items: flex-start;
+}
+.align-items_end {
+	align-items: flex-end;
+}
+.flex-grow_1 {
+	flex-grow: 1;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+
+.border_1px {
+	border: 1px solid;
+}
+
+.border-radius_4px {
+	border-radius: 4px;
+}
+
+.border-radius_12px {
+	border-radius: 12px;
+}
+
+.text-decoration_none {
+	text-decoration: none;
+}
+a:hover {	
+	color: #2196f3;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.display_none {
+	display: none;
+}
+
+.box-sizing {
+	box-sizing: border-box;
+}
+
+.max-width {
+	max-width: 1240px;
+}
+
+.width_70 {
+	width: 70%;
+}
+
+.width_80 {
+	width: 80%;
+}
+
+.width_90 {
+	width: 90%;
+}
+
+.width_100 {
+	width: 100%;
+}
+
+/* ТЕКСТ */
+.cardName {
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;	
+	font-style: normal;
+	font-weight: bold;
+	color: #007765;
+	text-align: center;
+	word-break: normal;
+}
+.font-size_12px{
+    font-size: 12px;
+	line-height: 14px;
+}
+.font-size_14px {
+    font-size: 14px;
+}
+.font-size_16px {
+    font-size: 16px;
+}
+.font-size_18px {
+    font-size: 18px;
+}
+/* CONTENT TEXT */
+.titleDefault {
+	font-family: BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	color: #343a40;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.textFontDefault {
+    font-family: BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;	
+	color: #343a40;
+	font-size: 16px;
+}

@@ -1,0 +1,31 @@
+.itemContainer {
+    margin-bottom: 15px;
+}
+
+.itemContainer_imgContainer {
+    min-width: 300px;
+	background-size: cover;
+    background-color: white;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.itemImg {
+    max-height: 280px;
+    max-width: 280px;
+}
+
+.itemContainer_tableContainer {
+    width: 100%;
+}
+
+.itemTable {
+    width: 100%;
+    border: 1px solid;
+    border-spacing: 0;
+    text-align: center;
+}
+
+.itemNote {
+    margin-left: 15px;
+}

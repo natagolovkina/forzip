@@ -1,0 +1,7 @@
+.footer_siteMap {
+	margin: 3px auto;
+	padding: 20px 0 5px;
+}
+.footer_siteMap:active {
+	color: #2196f3;
+}
