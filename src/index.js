@@ -8,8 +8,7 @@ import logoForDark from '@/assets/logoForDark.png';
 console.log(logoForDark);
 */
 
-import tryReactTest from '@js/reactTest';
-tryReactTest();
-
-import tryJSXTest from '@js/secTestReact';
-tryJSXTest();
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '@js/App';
+ReactDOM.render(<App />, document.getElementById('contentContainer'));

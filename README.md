@@ -174,5 +174,8 @@ Initial commit
 1)установил webpack-bundle-analyzer
 2)заполнил README
 
-29.07.20
+28.07.20
 установил React и JSX
+
+29.07.20
+настроил роутинг, но пока криво
