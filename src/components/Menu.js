@@ -12,13 +12,13 @@ export const Menu = () => {
                             className="menu__list_itemText textFontDefault text-decoration_none">Главная</Link>
                         </li>
                         <li className="menu__list_item">
-                            <Link to="/catalog" className="menu__list_itemText textFontDefault text-decoration_none">Каталог</Link>
+                            <Link to="/fcatalog" className="menu__list_itemText textFontDefault text-decoration_none">Каталог</Link>
                         </li>
                         <li className="menu__list_item">
                             <Link to="/service" className="menu__list_itemText textFontDefault text-decoration_none">Обслуживание</Link>
                         </li>			
                         <li className="menu__list_item">
-                            <Link to="/contacts" className="menu__list_itemText textFontDefault text-decoration_none">Контакты</Link>
+                            <Link to="/fcontacts" className="menu__list_itemText textFontDefault text-decoration_none">Контакты</Link>
                         </li>
                         <li className="menu__list_item menu__list_lastItem">
                             <Link to="/request" className="menu__list_itemText textFontDefault text-decoration_none">Online заявка</Link>

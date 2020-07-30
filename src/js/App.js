@@ -16,9 +16,9 @@ function App() {
                 <div className="content_inner innerContainer max-width">
                     <Switch>
                         <Route path='/' exact component={Home} />
-                        <Route path='/catalog' component={Catalog} />
+                        <Route path='/fcatalog' component={Catalog} />
                         <Route path='/service' component={Service} />
-                        <Route path='/contacts' component={Contacts} />
+                        <Route path='/fcontacts' component={Contacts} />
                         <Route path='/request' component={Request} />
                     </Switch>
                 </div>

@@ -82,6 +82,7 @@ module.exports = {
     },
     optimization: optimization(),
     devServer: {
+        historyApiFallback: true,
         port: 4200,
         hot: isDev
     },
