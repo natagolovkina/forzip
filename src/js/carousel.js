@@ -1,10 +1,4 @@
-let carouselItems = [
-  {name:"Компрессор Зубр", imgCarousel:"main/carousel/1.png"},
-  {name:"Ресивер AIRRUS (РКЗ)", imgCarousel:"main/carousel/2.png"},
-  {name:"Части для компрессоров", imgCarousel:"main/carousel/3.png"},
-  {name:"Гидрометр", imgCarousel:"main/carousel/4.png"},  
-  {name:"Колесо шасси", imgCarousel:"main/carousel/5.png"}
-];
+import carouselItemsTest from '@/maps/carouselMap';//тестовый массив с товарами
 
 let carouselBox = document.querySelector('#main-carouselBox');
 let carouselGallery = carouselBox.querySelector('.content__goodsCarousel_gallery');
@@ -20,9 +14,12 @@ let makeNewItemForCarousel = function (src, name) {
     carouselGallery.appendChild(newCard);
 };
 
-for (i = 0; i < carouselItems.length; i++) {
-  let imgPath = carouselItems[i].imgCarousel;
-  let title = carouselItems[i].name;
+let items = carouselItemsTest;
+//пока стоит тестовый массив, заменить на мапу с товарами
+
+for (i = 0; i < items.length; i++) {
+  let imgPath = items[i].imgCarousel;
+  let title = items[i].name;
   makeNewItemForCarousel(imgPath,title);
 }; 
 

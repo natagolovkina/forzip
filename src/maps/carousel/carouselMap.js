@@ -1,7 +1,9 @@
-let carouselItems = [
-    {name:"Компрессор Зубр", imgCarousel:"main/carousel/1.png"},
-    {name:"Ресивер AIRRUS (РКЗ)", imgCarousel:"main/carousel/2.png"},
-    {name:"Части для компрессоров", imgCarousel:"main/carousel/3.png"},
-    {name:"Гидрометр", imgCarousel:"main/carousel/4.png"},  
-    {name:"Колесо шасси", imgCarousel:"main/carousel/5.png"}
+let carouselItemsTest = [
+    {title:"Компрессор Зубр", imgSrc:"main/carousel/1.png"},
+    {title:"Ресивер AIRRUS (РКЗ)", imgSrc:"main/carousel/2.png"},
+    {title:"Части для компрессоров", imgSrc:"main/carousel/3.png"},
+    {title:"Гидрометр", imgSrc:"main/carousel/4.png"},  
+    {title:"Колесо шасси", imgSrc:"main/carousel/5.png"}
   ];
+
+  export default carouselItemsTest;
