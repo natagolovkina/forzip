@@ -1,0 +1,12 @@
+/*описание content__container в commons.CSS*/
+
+.content__containerAboutUs {
+	width: 35%;
+}
+
+.content__containerGoods {
+	width: 65%;
+}
+
+/*.content__aboutUs_title {}
+.content__aboutUs_intro {}*/
