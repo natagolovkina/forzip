@@ -83,6 +83,7 @@ module.exports = {
     optimization: optimization(),
     devServer: {
         historyApiFallback: true,
+        contentBase: './',
         port: 4200,
         hot: isDev
     },
