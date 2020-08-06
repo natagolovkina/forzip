@@ -76,11 +76,16 @@ module.exports = {
         extensions: ['.js', '.json'],
         alias: {
             '@js': path.resolve(__dirname, 'src/js'),
-            '@': path.resolve(__dirname, 'src')
+            '@pages': path.resolve(__dirname, 'src/pages'),
+            '@components': path.resolve(__dirname, 'src/components'),
+            '@': path.resolve(__dirname, 'src'),
+            '@styles': path.resolve(__dirname, 'src/styles')
         }
     },
     optimization: optimization(),
     devServer: {
+        historyApiFallback: true,
+        contentBase: './',
         port: 4200,
         hot: isDev
     },
