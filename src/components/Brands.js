@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import brandsTest from '@/maps/brands/brandsMap';//тестовый массив с брендами
-import '@/styles/block-brands.css';
+import '@styles/block-brands.css';
 
 export const Brands = ({brands}) => {
     brands = brandsTest;

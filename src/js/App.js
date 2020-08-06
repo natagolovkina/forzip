@@ -1,16 +1,19 @@
 import React from 'react';
+import {Navbar} from '@components/Navbar';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import {Menu} from '@/components/Menu';
+import {Menu} from '@components/MenuList';
 import {Home} from '@pages/Home';
 import {Catalog} from '@pages/Catalog';
 import {Service} from '@pages/Service';
 import {Contacts} from '@pages/Contacts';
 import {Request} from '@pages/Request';
+import {Footer} from '@components/Footer';
 
 
 function App() {
     return(
         <BrowserRouter>
+            <Navbar />
             <Menu />
             <div className="content_outer outerContainer blocksMargin contentBackground">
                 <div className="content_inner innerContainer max-width">
@@ -23,6 +26,7 @@ function App() {
                     </Switch>
                 </div>
             </div>
+            <Footer />
         </BrowserRouter>
     )
 };

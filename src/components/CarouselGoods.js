@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import carouselItemsTest from '@/maps/carousel/carouselMap';//тестовый массив с товарами
-import {CarouselItem} from '@/components/CarouselItem';
+import {CarouselItem} from '@components/CarouselItem';
 import '@/styles/block-carousel.css';
 
 export const CarouselGoods = () => {

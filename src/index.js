@@ -1,4 +1,4 @@
-import './styles/styles.css';
+import '@styles/styles.css';
 
 import btnOnlineRequestModule from '@js/navbarOnlineRequest';
 btnOnlineRequestModule();
@@ -11,4 +11,4 @@ console.log(logoForDark);
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '@js/App';
-ReactDOM.render(<App />, document.getElementById('contentContainer'));
+ReactDOM.render(<App />, document.getElementById('root'));

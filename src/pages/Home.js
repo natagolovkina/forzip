@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
-import {AboutUs} from '@/components/AboutUs';
-import {CarouselGoods} from '@/components/CarouselGoods';
-import {Brands} from '@/components/Brands';
+import {AboutUs} from '@components/AboutUs';
+import {CarouselGoods} from '@components/CarouselGoods';
+import {Brands} from '@components/Brands';
 import '@/styles/content-main.css';
 
 export const Home = () => {
