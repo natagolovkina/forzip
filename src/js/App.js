@@ -8,6 +8,7 @@ import {Service} from '@pages/Service';
 import {Contacts} from '@pages/Contacts';
 import {Request} from '@pages/Request';
 import {Footer} from '@components/Footer';
+import {SiteMap} from '@pages/SiteMap';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                         <Route path='/service' component={Service} />
                         <Route path='/fcontacts' component={Contacts} />
                         <Route path='/request' component={Request} />
+                        <Route path='/sitemap' component={SiteMap} />
                     </Switch>
                 </div>
             </div>
