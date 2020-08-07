@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import {CatalogItem} from '@components/CatalogItem';
 import {FilterList} from '@components/FilterList';
-import '@/styles/content-catalog.css';
+import '@styles/content-catalog.css';
 
 //тестовый массив с категориями товаров
 let categoriesItemsTest = [

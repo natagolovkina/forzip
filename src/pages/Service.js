@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import {Brands} from '@components/Brands';
-import '@/styles/content-service.css';
+import '@styles/content-service.css';
 
 export const Service = () => {
     return(

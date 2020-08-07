@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/styles/content-contacts.css';
+import '@styles/content-contacts.css';
 
 export const Contacts = () => {
     return(
@@ -11,12 +11,12 @@ export const Contacts = () => {
                     <p className="content__descriptionContainer_description_text textFontDefault">Телефон: <a href="tel:+79168548890" >8-916-854-88-90</a></p>
                     <div className="content__descriptionContainer_description_messengerContainer flex">		
                         <a href="viber://chat?number=+79168548890" className="messengerLink">
-                            <img src="messengersIcons/viber-logo3.png" alt="" className="messengerLogo" />
+                            <img src="viber-logo3.png" alt="" className="messengerLogo" />
                         </a>
                         <a href="https://wa.me/79168548890" className="messengerLink">
-                            <img src="messengersIcons/whatsapp-logo2.jpg" alt="" className="messengerLogo" />
+                            <img src="whatsapp-logo2.jpg" alt="" className="messengerLogo" />
                         </a>
-                        <img src="messengersIcons/telegramm-logo.jpg" alt="" className="messengerLogo display_none" />
+                        <img src="telegramm-logo.jpg" alt="" className="messengerLogo display_none" />
                     </div>
                 </div>
                 <div className="content__descriptionContainer_description">
@@ -34,7 +34,7 @@ export const Contacts = () => {
             </div>
             <div className="content__mapContainer">
                 <h1 className="content__descriptionContainer_description_title titleDefault">Как добраться:</h1>
-                <img src="@/maps/map.png" alt="" className="contactsMap" />
+                <img src="map.png" alt="" className="contactsMap" />
             </div>
         </div>
     )

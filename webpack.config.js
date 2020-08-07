@@ -47,6 +47,22 @@ const plugins = () => {
                 {
                     from: path.resolve(__dirname,'src/assets/onlineRequestForDark.png'),
                     to: path.resolve(__dirname,'dist')
+                },
+                {
+                    from: path.resolve(__dirname,'src/assets/map.png'),
+                    to: path.resolve(__dirname,'dist')
+                },
+                {
+                    from: path.resolve(__dirname,'src/assets/messengersIcons/viber-logo3.png'),
+                    to: path.resolve(__dirname,'dist')
+                },
+                {
+                    from: path.resolve(__dirname,'src/assets/messengersIcons/whatsapp-logo2.jpg'),
+                    to: path.resolve(__dirname,'dist')
+                },
+                {
+                    from: path.resolve(__dirname,'src/assets/messengersIcons/telegramm-logo.jpg'),
+                    to: path.resolve(__dirname,'dist')
                 }
             ]
         }),

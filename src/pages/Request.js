@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/styles/content-request.css';
+import '@styles/content-request.css';
 
 export const Request = () => {
     return(

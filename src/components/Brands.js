@@ -1,9 +1,17 @@
 import React, {Fragment} from 'react';
-import brandsTest from '@/maps/brands/brandsMap';//тестовый массив с брендами
 import '@styles/block-brands.css';
 
+//тестовый массив с брендами
+let brandArr = [
+    {name:"Ремеза (Remeza)", img130:"../src/maps/brands/remeza.jpg"},
+    {name:"Бежецкий завод АСО", img130:"../src/maps/brands/aso.jpg"},
+    {name:"Берг (Berg)", img130:"../src/maps/brands/berg.png"},
+    {name:"Компраг (Comprag)", img130:"../src/maps/brands/comprag.jpg"},
+    {name:"Фини (FINI)", img130:"../src/maps/brands/fini.jpg"},
+];
+
 export const Brands = ({brands}) => {
-    brands = brandsTest;
+    brands = brandArr;
     return(
         <div className="content__brands margin_auto width_90 flex justify-content_space-around" id="main-brands">
             {brands.map((brand, i) => (
