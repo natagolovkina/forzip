@@ -9,7 +9,7 @@ import {Contacts} from '@pages/Contacts';
 import {Request} from '@pages/Request';
 import {Footer} from '@components/Footer';
 import {SiteMap} from '@pages/SiteMap';
-
+import {Items} from '@pages/Items';
 
 function App() {
     return(
@@ -24,7 +24,8 @@ function App() {
                         <Route path='/service' component={Service} />
                         <Route path='/fcontacts' component={Contacts} />
                         <Route path='/request' component={Request} />
-                        <Route path='/sitemap' component={SiteMap} />
+                        <Route path='/sitemap' component={SiteMap} />                        
+                        <Route path='/item' component={Items} />
                     </Switch>
                 </div>
             </div>
