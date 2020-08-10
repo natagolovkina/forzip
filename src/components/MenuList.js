@@ -2,27 +2,36 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import '@styles/menu.css';
 
+let menuItems = [
+    {name:"Главная", link:"/"},
+    {name:"Каталог", link:"/catalog"},
+    {name:"Обслуживание", link:"/service"},
+    {name:"Контакты", link:"/contacts"},
+    {name:"Item(dev)", link:"/item"},
+    {name:"Online заявка", link:"/request"},
+];
+
 export const Menu = () => {
     return(
         <div className="menu_outer outerContainer blocksMargin menuBackground">
             <div className="menu_inner innerContainer max-width">
                 <ul className="menu__list flex">
-                    <li className="menu__list_item menu__list_firstItem">
-                        <Link to="/"
-                        className="menu__list_itemText textFontDefault text-decoration_none">Главная</Link>
-                    </li>
-                    <li className="menu__list_item">
-                        <Link to="/fcatalog" className="menu__list_itemText textFontDefault text-decoration_none">Каталог</Link>
-                    </li>
-                    <li className="menu__list_item">
-                        <Link to="/service" className="menu__list_itemText textFontDefault text-decoration_none">Обслуживание</Link>
-                    </li>			
-                    <li className="menu__list_item">
-                        <Link to="/fcontacts" className="menu__list_itemText textFontDefault text-decoration_none">Контакты</Link>
-                    </li>
-                    <li className="menu__list_item menu__list_lastItem">
-                        <Link to="/request" className="menu__list_itemText textFontDefault text-decoration_none">Online заявка</Link>
-                    </li>
+
+                    {menuItems.map((item, i) => {
+                        let classes = ["menu__list_item"]
+                        if (i === 0) {
+                            classes.push("menu__list_firstItem")
+                        }
+                        if (i === menuItems.length - 1) {
+                            classes.push("menu__list_lastItem")
+                        }
+                        return (
+                            <li className={classes.join(' ')} key={i}>
+                                <Link to={item.link}
+                                className="menu__list_itemText textFontDefault text-decoration_none">{item.name}</Link>
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>
         </div>
