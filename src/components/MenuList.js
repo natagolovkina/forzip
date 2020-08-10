@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import '@styles/menu.css';
 
 let menuItems = [
@@ -27,8 +27,11 @@ export const Menu = () => {
                         }
                         return (
                             <li className={classes.join(' ')} key={i}>
-                                <Link to={item.link}
-                                className="menu__list_itemText textFontDefault text-decoration_none">{item.name}</Link>
+                                <NavLink to={item.link} exact
+                                activeClassName="activePage" 
+                                className="menu__list_itemText textFontDefault text-decoration_none">
+                                    {item.name}
+                                </NavLink>
                             </li>
                         )
                     })}
