@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navbar} from '@components/Navbar';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import {Menu} from '@components/MenuList';
+import {Menu} from '@components/Menu';
 import {Home} from '@pages/Home';
 import {Catalog} from '@pages/Catalog';
 import {Service} from '@pages/Service';
