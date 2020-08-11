@@ -3,12 +3,12 @@ import {NavLink} from 'react-router-dom';
 import '@styles/menu.css';
 
 let menuItems = [
-    {name:"Главная", link:"/"},
-    {name:"Каталог", link:"/catalog"},
-    {name:"Обслуживание", link:"/service"},
-    {name:"Контакты", link:"/contacts"},
-    {name:"Item(dev)", link:"/item"},
-    {name:"Online заявка", link:"/request"},
+    {name:"Главная", link:"/", isExact: true},
+    {name:"Каталог", link:"/catalog", isExact: false},
+    {name:"Обслуживание", link:"/service", isExact: false},
+    {name:"Контакты", link:"/contacts", isExact: false},
+    {name:"Item(dev)", link:"/item", isExact: false},
+    {name:"Online заявка", link:"/request", isExact: false},
 ];
 
 export const Menu = () => {
@@ -27,7 +27,7 @@ export const Menu = () => {
                         }
                         return (
                             <li className={classes.join(' ')} key={i}>
-                                <NavLink to={item.link} exact
+                                <NavLink to={item.link} exact={item.isExact}
                                 activeClassName="activePage" 
                                 className="menu__list_itemText textFontDefault text-decoration_none">
                                     {item.name}
