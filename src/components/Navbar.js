@@ -3,18 +3,20 @@ import {Link} from 'react-router-dom';
 import '@styles/navbar.css';
 
 import itemsMap from '@/maps/itemPage/itemsMap';
+import searchMethodsModule from '@js/searchMethods';
+let searchMethods = searchMethodsModule();
 
 const SearchInput = () => {
 	const [value, setValue] = useState('');
 		
 	function submitHandler (event) {
-		event.preventDefault()
+		event.preventDefault();
 	
 		if (value.trim()) {
-			console.log(value)
-			setValue('')
+			console.log('res: ', searchMethods.findByNum(value, itemsMap));
+			setValue('');
 		}
-	}
+	};
 
 	return(
 		<form onSubmit={submitHandler}>
@@ -24,7 +26,7 @@ const SearchInput = () => {
 			onChange={event => setValue(event.target.value)} />
 		</form>
 	)
-}
+};
 
 export const Navbar = () => {
     return(

@@ -26,7 +26,8 @@ export const ItemTable = ({item}) => {
             {
                 item.notes && item.notes.map((note, noteNum) => (
                     <p className="textFontDefault itemNote" key={noteNum+1}>{note}</p>
-                ))}
+                ))
+            }
             
         </div>
     )
