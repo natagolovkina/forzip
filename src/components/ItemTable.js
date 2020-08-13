@@ -1,15 +1,5 @@
 import React, {Fragment} from 'react';
 
-const ItemNote = ({notes}) => {
-    return (
-        <Fragment>
-            {notes.map((note, noteNum) => (
-                <p className="textFontDefault itemNote" key={noteNum+1}>{note}</p>
-            ))}
-        </Fragment>
-    )
-}
-
 export const ItemTable = ({item}) => {
     return(
         <div className="itemContainer_tableContainer">
@@ -17,7 +7,7 @@ export const ItemTable = ({item}) => {
                 <thead>
                     <tr>
                         {Object.values(item.characteristics).map((character, headNum) => (
-                            <th className="textFontDefault border_1px" key={headNum+1}>{character}</th>
+                            <th className="textFontDefault border_1px" key={headNum+1} dangerouslySetInnerHTML={{ __html: character }}></th>
                         ))}
                     </tr>
                 </thead>
@@ -33,20 +23,11 @@ export const ItemTable = ({item}) => {
                     ))}
                 </tbody>
             </table>
-            {(() => {
-                if (item.notes) {
-                    <ItemNote notes = {item.notes}/>
-                    /*console.log(item.name, ': ',item.notes)
-                    {item.notes.map((note, noteNum) => {
-                        console.log(note)
-                        return (
-                            <p className="textFontDefault itemNote" key={i*10000+noteNum}>
-                                {note}
-                            </p>
-                        )
-                    })}*/
-                }
-            })()}
+            {
+                item.notes && item.notes.map((note, noteNum) => (
+                    <p className="textFontDefault itemNote" key={noteNum+1}>{note}</p>
+                ))}
+            
         </div>
     )
 }
