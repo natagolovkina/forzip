@@ -1,19 +1,17 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import {Link} from 'react-router-dom';
 import '@styles/navbar.css';
-
-import itemsMap from '@/maps/itemPage/itemsMap';
-import searchMethodsModule from '@js/searchMethods';
-let searchMethods = searchMethodsModule();
+import ItemContext from '@/context/item/itemContext';
 
 const SearchInput = () => {
-	const [value, setValue] = useState('');
+	const [value, setValue] = useState('');	
+    const {findItem} = useContext(ItemContext);
 		
 	function submitHandler (event) {
 		event.preventDefault();
 	
 		if (value.trim()) {
-			console.log('res: ', searchMethods.findByNum(value, itemsMap));
+			findItem(value);
 			setValue('');
 		}
 	};
