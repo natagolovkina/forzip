@@ -11,6 +11,9 @@ const SearchInput = () => {
 		event.preventDefault();
 	
 		if (value.trim()) {
+			let itemURL = new URL ('http://localhost:4200/item');
+			itemURL.searchParams.set('type', value);
+			window.history.pushState(null, null, itemURL);
 			findItem(value);
 			setValue('');
 		}
