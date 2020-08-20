@@ -5,17 +5,23 @@ import ItemContext from '@/context/item/itemContext';
 
 const SearchInput = () => {
 	const [value, setValue] = useState('');	
-    const {findItem} = useContext(ItemContext);
+    const {showNewItem} = useContext(ItemContext);
 		
 	function submitHandler (event) {
 		event.preventDefault();
 	
 		if (value.trim()) {
-			let itemURL = new URL ('http://localhost:4200/item');
-			itemURL.searchParams.set('type', value);
-			window.history.pushState(null, null, itemURL);
-			findItem(value);
-			setValue('');
+			let itemURL = new URL (window.location.href);
+			if (itemURL.pathname === '/item') {
+				itemURL.searchParams.set('type', value);
+				window.history.pushState(null, null, itemURL);
+				showNewItem();
+				setValue('');
+			} else {
+				itemURL.pathname = '/item';
+				itemURL.searchParams.set('type', value);
+				window.location.href = itemURL;
+			}
 		}
 	};
 

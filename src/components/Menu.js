@@ -7,7 +7,6 @@ let menuItems = [
     {name:"Каталог", link:"/catalog", isExact: false},
     {name:"Обслуживание", link:"/service", isExact: false},
     {name:"Контакты", link:"/contacts", isExact: false},
-    {name:"Item(dev)", link:"/item", isExact: false},
     {name:"Online заявка", link:"/request", isExact: false},
 ];
 

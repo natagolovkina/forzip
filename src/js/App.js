@@ -16,18 +16,22 @@ import ItemContext from '@/context/item/itemContext';
 import itemsMap from '@/maps/itemPage/itemsMap';
 import searchMethodsModule from '@js/searchMethods';
 const searchMethods = searchMethodsModule();
+function findItem() {
+    let nowURL = new URL (window.location.href);
+    let targetItem = nowURL.searchParams.get('type');
+    return searchMethods.findByNum(targetItem, itemsMap);
+    //setItem(searchMethods.findByType(targetItem, itemsMap));
+};
 
 function App() {
-    const [item, setItem] = React.useState([itemsMap[0]]);
-    //setItem([itemsMap[1]]);
+    const [item, setItem] = React.useState(findItem());
 
-    function findItem(str) {
-        setItem(searchMethods.findByNum(str, itemsMap));
-        //setItem(searchMethods.findByType(str, itemsMap));
+    function showNewItem() {
+        setItem(findItem())
     };
 
     return(
-        <ItemContext.Provider value={{ findItem }}>
+        <ItemContext.Provider value={{ showNewItem }}>
             <BrowserRouter>
                 <Navbar />
                 <Menu />
