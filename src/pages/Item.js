@@ -7,11 +7,12 @@ const ItemTitle = ({title}) => {
     )
 };
 
-const ItemImg = ({imgPath}) => {
+const ItemImg = ({img}) => {
     return(
-        <div className="itemContainer_imgContainer flex justify-content_center align-items_center box-sizing">
-            <img src={imgPath} className="itemImg" />
-        </div>
+        <figure className="itemContainer_imgContainer flex flex-direction_column justify-content_center align-items_center box-sizing">
+            <img src={img.path} className="itemImg" />
+            <figcaption className="textFontDefault">{img.figcaption}</figcaption>
+        </figure>
     )
 };
 
@@ -85,8 +86,7 @@ const ItemTable = ({itemsVar}) => {
                 itemsVar.notes && itemsVar.notes.map((note, noteNum) => (
                     <p className="textFontDefault itemNote" key={noteNum}>{note}</p>
                 ))
-            }
-            
+            }            
         </div>
     )
 };
@@ -99,7 +99,7 @@ export const Item = ({item}) => {
                 <ItemTitle title = {item[0].type}/>
                 {item.map((itemsVar, i) => (
                     <div className="itemContainer flex" key={i}>
-                        <ItemImg imgPath = {itemsVar.imgPath}/>
+                        <ItemImg img = {itemsVar.img}/>
                         <ItemTable itemsVar = {itemsVar}/>
                     </div>
                 ))}
