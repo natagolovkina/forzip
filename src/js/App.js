@@ -19,8 +19,7 @@ const searchMethods = searchMethodsModule();
 function findItem() {
     let nowURL = new URL (window.location.href);
     let targetItem = nowURL.searchParams.get('type');
-    return searchMethods.findByNum(targetItem, itemsMap);
-    //setItem(searchMethods.findByType(targetItem, itemsMap));
+    return searchMethods.findByType(targetItem, itemsMap);
 };
 
 function App() {

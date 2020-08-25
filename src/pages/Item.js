@@ -15,17 +15,60 @@ const ItemImg = ({imgPath}) => {
     )
 };
 
-const ItemTable = ({itemsVar}) => {
+let ifArray = function (characteristics) {
+    let first = [];
+    let second = [];
+    Object.values(characteristics).map((character) => {
+        let obj = {width:1, height:1, inner:''};
+        if (Array.isArray(character)) {
+            obj.width = 2;
+            let rest = [];
+            [obj.inner, ...rest] = character;
+            second = [...second, ...rest];
+        } else {
+            obj.height = 2;
+            obj.inner = character;
+        };
+        first.push(obj);
+    });
+    return [first, second]
+};
+
+const TableHeadRow = ({characteristics}) => {
+    if (Object.values(characteristics).some(Array.isArray)) {
+        let [firstRow, secondRow] = ifArray(characteristics);
+        return (
+            <thead>
+                <tr>
+                    {firstRow.map((character, headNum) => (
+                        <th className="textFontDefault border_1px" rowSpan={character.height} colSpan={character.width} key={headNum} dangerouslySetInnerHTML={{ __html: character.inner }}></th>
+                    ))}
+                </tr>
+                <tr>
+                    {secondRow.map((character, headNum) => (
+                        <th className="textFontDefault border_1px" key={headNum} dangerouslySetInnerHTML={{ __html: character }}></th>
+                    ))}
+                </tr>
+            </thead>
+        )
+    } else {
+        return(
+            <thead>
+                <tr>
+                    {Object.values(characteristics).map((character, headNum) => (
+                        <th className="textFontDefault border_1px" key={headNum} dangerouslySetInnerHTML={{ __html: character }}></th>
+                    ))}
+                </tr>
+            </thead>
+        )
+    }
+};
+
+const ItemTable = ({itemsVar}) => {    
     return(
         <div className="itemContainer_tableContainer">
             <table className="itemTable">
-                <thead>
-                    <tr>
-                        {Object.values(itemsVar.characteristics).map((character, headNum) => (
-                            <th className="textFontDefault border_1px" key={headNum} dangerouslySetInnerHTML={{ __html: character }}></th>
-                        ))}
-                    </tr>
-                </thead>
+                <TableHeadRow characteristics = {itemsVar.characteristics}/>
                 <tbody>
                     {itemsVar.list.map((itemRow, rowNum) => (
                         <tr key={rowNum}>
@@ -49,10 +92,11 @@ const ItemTable = ({itemsVar}) => {
 };
 
 export const Item = ({item}) => {
+    console.log(item);
     return(
         <div className="content__container">
             <Fragment>
-                <ItemTitle title = {item.type}/>
+                <ItemTitle title = {item[0].type}/>
                 {item.map((itemsVar, i) => (
                     <div className="itemContainer flex" key={i}>
                         <ItemImg imgPath = {itemsVar.imgPath}/>

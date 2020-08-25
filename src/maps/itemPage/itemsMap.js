@@ -1,4 +1,4 @@
-let itemsMap = [
+let remeza = [
     {name:"R001",
     number: "R001",
     brandName:"Ремеза (Remeza)",
@@ -101,8 +101,11 @@ let itemsMap = [
     list:[
         {model:"СБ4/C-100.J2047BB", volume:"100", cylinders_steps:"2/1", pressure:"8", productivity:"400", capacity:"2,2", voltage:"220", weight:"73", size:"650 x 550 x 1240"}
         ],
-    notes: ''
-    },
+    notes: ["Компрессорные установки С412М, К29, К29-01 изготавливаются с баллонами вместимостью 10л и 22л соответственно"]
+    }
+];
+
+let airrus = [
     {name:"AR001",
     number: "AR001",
     brandName:"AIRRUS (РКЗ)",
@@ -131,7 +134,10 @@ let itemsMap = [
         {model:"OP100-40", throughputRate:"10.0", pressure:"40", connecting:"1 1/2", capacity:"2.0", weight:"180", size:"800x850x1000"},
         ],
     notes: ''
-    },
+    }
+];
+
+let aso = [
     {name:"ASO001",
     number: "ASO001",
     brandName:"Винтовые компрессоры Бежецкого завода АСО",
@@ -163,7 +169,32 @@ let itemsMap = [
         {model:"AC0-BK18-500", formerName:"BK-57M1.00.00.000 (BK-57M1)", screwBlock:"EVO3-NK (Rotorcomp)", nominalCapacity:"2,8 / 2,5 / 2,2 / 2,0", workingPressure:"8/ 10/ 13/ 16", drivePower:"18,5", receiver:"500", noise:"64..68", weight:"580", size:"200 x 80 x 155"}
     ],
     notes: ''
+    },
+    {name:"ASO003",
+    number: "ASO003",
+    brandName:"Винтовые компрессоры Бежецкого завода АСО",
+    category:"Поршневые компрессоры",
+    type:"Поршневые компрессоры Бежецкого завода АСО",
+    imgPath:"../src/maps/itemPage/IMGs/c412m.jpg",
+    characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], finalPressure:["Конечное давление", "Атм.", "МПа"], receiver:"Ресивер,</br>л", drivePower:"Мощность привода,</br>кВт / U", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
+    list:[
+        {model:"Компрессор С412М", typeAuto: "Передвижной / -", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"10", finalPressureMpa:"1", receiver:"-", drivePower:"2,2 / 380", weight:"72", size:"750x450x550"},
+        {model:"Компрессор К29", typeAuto: "Передвижной / +", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"8", finalPressureMpa:"0,8", receiver:"-", drivePower:"2,2 / 380", weight:"85", size:"800x400x750"},
+        {model:"Компрессор К29-01", typeAuto: "Передвижной / +", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"10", finalPressureMpa:"1", receiver:"-", drivePower:"2,2 / 380", weight:"85", size:"800x400x750"},
+        {model:"Компрессор К1", typeAuto: "Передвижной / +", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"10", finalPressureMpa:"1", receiver:"100(0,1)", drivePower:"2,2 / 380", weight:"110", size:"1000x620x970"},
+        {model:"Компрессор КВ7", typeAuto: "Передвижной / +", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"10", finalPressureMpa:"1", receiver:"110(0,11)", drivePower:"2,2 / 380", weight:"130", size:"820x620x1400"},
+        {model:"Компрессор К11", typeAuto: "Передвижной / +", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"10", finalPressureMpa:"1", receiver:"60(0,06)", drivePower:"2,2 / 380", weight:"100", size:"1000x500x820"},
+        {model:"Компрессор К12", typeAuto: "Передвижной / +", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"8", finalPressureMpa:"0,8", receiver:"60(0,06)", drivePower:"2,2 / 220", weight:"105", size:"1000x500x820"},
+        {model:"Компрессор К13", typeAuto: "Передвижной / +", capacityIn:"0,41", capacityOut:"0,25", finalPressureAtm:"6", finalPressureMpa:"0,6", receiver:"60(0,06)", drivePower:"3,0 / 380", weight:"105", size:"1000x500x820"}
+    ],
+    notes: ''
     }
+];
+
+let itemsMap = [
+    ...remeza,
+    ...airrus,
+    ...aso
 ];
 
 export default itemsMap;
