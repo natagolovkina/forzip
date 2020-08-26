@@ -4,6 +4,7 @@ let remeza = [
     brandName:"Ремеза (Remeza)",
     category:"Винтовые компрессоры",
     type:"Ременный привод, мощность 4-15 кВт (серия ВК-Е)",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/bk15e.jpg", figcaption:""},
     characteristics:{model:"Модель", pressure:"Давление,</br>бар", productivity:"Производительность,</br>л/мин", capacity:"Мощность,</br>кВт", noise:"Шум,</br>ДБ", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм", output:"Выход,</br>G"}, 
     list:[
@@ -20,6 +21,7 @@ let remeza = [
     brandName:"Ремеза (Remeza)",
     category:"Винтовые компрессоры",
     type:"Ременный привод, мощность 4-15 кВт (серия ВК-Е)",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/bk5e.jpg", figcaption:""},
     characteristics:{model:"Модель", volume:"Объём,</br>л", pressure:"Давление,</br>бар", productivity:"Производительность,</br>л/мин", capacity:"Мощность,</br>кВт", noise:"Шум,</br>ДБ", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм", output:"Выход,</br>G"}, 
     list:[
@@ -36,6 +38,7 @@ let remeza = [
     brandName:"Ремеза (Remeza)",
     category:"Винтовые компрессоры",
     type:"Ременный привод, мощность 4-15 кВт (серия ВК-Е)",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/bk15ed.jpg", figcaption:""},
     characteristics:{model:"Модель", volume:"Объём,</br>л", pressure:"Давление,</br>бар", productivity:"Производительность,</br>л/мин", capacity:"Мощность,</br>кВт", noise:"Шум,</br>ДБ", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм", output:"Выход,</br>G"}, 
     list:[
@@ -52,6 +55,7 @@ let remeza = [
     brandName:"Ремеза (Remeza)",
     category:"Винтовые компрессоры",
     type:"Открытого типа мощность 11,0-15,0 кВт",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/bk15a.jpg", figcaption:""},
     characteristics:{model:"Модель", volume:"Объём,</br>л", pressure:"Давление,</br>бар", productivity:"Производительность,</br>л/мин", capacity:"Мощность,</br>кВт", noise:"Шум,</br>ДБ", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм", output:"Выход,</br>G"}, 
     list:[
@@ -65,6 +69,7 @@ let remeza = [
     brandName:"Ремеза (Remeza)",
     category:"Поршневые компрессоры",
     type:"Поршневые компрессоры с прямым приводом (200-400 л/мин), (мощность 1,5-2,2 кВт)",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/J2048B.jpg", figcaption:""},
     characteristics:{model:"Модель", volume:"Объём,</br>л", cylinders_steps:"Цилиндры/</br>ступени", pressure:"Давление,</br>бар", productivity:"Производительность,</br>л/мин", capacity:"Мощность,</br>кВт", voltage:"Напряжение,</br>В", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм",}, 
     list:[
@@ -79,6 +84,7 @@ let remeza = [
     brandName:"Ремеза (Remeza)",
     category:"Поршневые компрессоры",
     type:"Поршневые компрессоры с прямым приводом (200-400 л/мин), (мощность 1,5-2,2 кВт)",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/J2048B.jpg", figcaption:""},
     characteristics:{model:"Модель", volume:"Объём,</br>л", cylinders_steps:"Цилиндры/</br>ступени", pressure:"Давление,</br>бар", productivity:"Производительность,</br>л/мин", capacity:"Мощность,</br>кВт", voltage:"Напряжение,</br>В", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм",}, 
     list:[
@@ -96,6 +102,7 @@ let remeza = [
     brandName:"Ремеза (Remeza)",
     category:"Поршневые компрессоры",
     type:"Поршневые компрессоры с прямым приводом (200-400 л/мин), (мощность 1,5-2,2 кВт)",
+    sectionTitle:"",
     img:{path:"", figcaption:""},
     characteristics:{model:"Модель", volume:"Объём,</br>л", cylinders_steps:"Цилиндры/</br>ступени", pressure:"Давление,</br>бар", productivity:"Производительность,</br>л/мин", capacity:"Мощность,</br>кВт", voltage:"Напряжение,</br>В", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
     list:[
@@ -111,6 +118,7 @@ let airrus = [
     brandName:"AIRRUS (РКЗ)",
     category:"Системы подготовки сжатого воздуха",
     type:"Рефрижераторные осушители",
+    sectionTitle:"",
     img:{path:"", figcaption:""},
     characteristics:{model:"Модель", throughputRate:"Пропускная способность,</br>м3/мин", pressure:"Давление,</br>бар", connecting:"Присоединения,</br>м3/м", capacity:"Мощность,</br>кВт", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
     list:[
@@ -143,6 +151,7 @@ let aso = [
     brandName:"Винтовые компрессоры Бежецкого завода АСО",
     category:"Винтовые компрессоры",
     type:"Передвижные",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/aco-bk22pe.jpg", figcaption:""},
     characteristics:{model:"Модель", formerName:"Старое наименование", screwBlock:"Винтовой блок", nominalCapacity:"Номинальная</br>производительность,</br>м3/мин", maxWorkingPressure:"Максимальное рабочее давление,</br>атм", drivePower:"Мощность привода,</br>кВт", noise:"Шум,</br>ДБ", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
     list:[
@@ -156,6 +165,7 @@ let aso = [
     brandName:"Винтовые компрессоры Бежецкого завода АСО",
     category:"Винтовые компрессоры",
     type:"Ременной привод, мощность 7,5-18,5 кВт, производительность до 2,5 м3/мин",
+    sectionTitle:"",
     img:{path:"../src/maps/itemPage/IMGs/aco-bk75-500.jpg", figcaption:""},
     characteristics:{model:"Модель", formerName:"Старое наименование", screwBlock:"Винтовой блок", nominalCapacity:"Номинальная</br>производительность,</br>м3/мин", workingPressure:"Максимальное рабочее давление,</br>атм", drivePower:"Мощность привода,</br>кВт", receiver:"Ресивер,</br>л", noise:"Шум,</br>ДБ", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
     list:[
@@ -175,6 +185,7 @@ let aso = [
     brandName:"Винтовые компрессоры Бежецкого завода АСО",
     category:"Поршневые компрессоры",
     type:"Поршневые компрессоры Бежецкого завода АСО",
+    sectionTitle:"Производительностью до 250 л/мин",
     img:{path:"../src/maps/itemPage/IMGs/c412m.jpg", figcaption:"C416M"},
     characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], finalPressure:["Конечное давление", "Атм.", "МПа"], receiver:"Ресивер,</br>л", drivePower:"Мощность привода,</br>кВт / U", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
     list:[

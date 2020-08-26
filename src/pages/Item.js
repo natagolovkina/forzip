@@ -1,9 +1,15 @@
 import React, {Fragment} from 'react';
 import '@styles/content-item.css';
 
-const ItemTitle = ({title}) => {
+const ItemTypeTitle = ({title}) => {
     return(
         <h1 className="titleDefault">{title}</h1>
+    )
+};
+
+const ItemSectionTitle = ({title}) => {
+    return(
+        <h2 className="itemSectionTitle">{title}</h2>
     )
 };
 
@@ -95,15 +101,16 @@ export const Item = ({item}) => {
     console.log(item);
     return(
         <div className="content__container">
-            <Fragment>
-                <ItemTitle title = {item[0].type}/>
-                {item.map((itemsVar, i) => (
-                    <div className="itemContainer flex" key={i}>
-                        <ItemImg img = {itemsVar.img}/>
-                        <ItemTable itemsVar = {itemsVar}/>
+            <ItemTypeTitle title = {item[0].type} />
+            {item.map((itemsVar, i) => (
+                <Fragment>
+                    <ItemSectionTitle title = {itemsVar.sectionTitle} key={i}/>
+                    <div className="itemContainer flex" key={i*100}>
+                        <ItemImg img = {itemsVar.img} />
+                        <ItemTable itemsVar = {itemsVar} />
                     </div>
-                ))}
-            </Fragment>
+                </Fragment>
+            ))}
         </div>
     )
 }
