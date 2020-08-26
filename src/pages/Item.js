@@ -119,18 +119,26 @@ const ItemTable = ({itemsVar}) => {
 
 export const Item = ({item}) => {
     console.log("item: ", item);
-    return(
-        <div className="content__container">
-            <ItemTypeTitle title = {item[0].type} />
-            {item.map((itemsVar, i) => (
-                <Fragment key={i}>
-                    <ItemSectionTitle title = {itemsVar.sectionTitle}/>
-                    <div className={classesIfSeveralImgs(itemsVar.img)}>
-                        <ItemImg img = {itemsVar.img} />
-                        <ItemTable itemsVar = {itemsVar} />
-                    </div>
-                </Fragment>
-            ))}
-        </div>
-    )
+    if (typeof item != "string") {
+        return(
+            <div className="content__container">
+                <ItemTypeTitle title = {item[0].type} />
+                {item.map((itemsVar, i) => (
+                    <Fragment key={i}>
+                        <ItemSectionTitle title = {itemsVar.sectionTitle}/>
+                        <div className={classesIfSeveralImgs(itemsVar.img)}>
+                            <ItemImg img = {itemsVar.img} />
+                            <ItemTable itemsVar = {itemsVar} />
+                        </div>
+                    </Fragment>
+                ))}
+            </div>
+        )                                                       
+    } else {
+        return (
+            <div className="content__container">
+                <ItemTypeTitle title = {item} />
+            </div>
+        )
+    }
 }
