@@ -27,8 +27,11 @@
 	padding: 7px;
 	border-color: #696969;
 	outline: none;
+	color: #343a40;
+	cursor: text;
+}
+.navbar__container_searchInput::placeholder{	
 	color: #9E9C9C;
-	cursor: pointer;
 }
 
 /*.navbar__container_request {}*/
