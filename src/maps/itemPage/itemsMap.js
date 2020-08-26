@@ -198,6 +198,106 @@ let aso = [
         {model:"Компрессор К12", typeAuto: "Передвижной / +", capacityIn:"0,28", capacityOut:"0,16", finalPressureAtm:"8", finalPressureMpa:"0,8", receiver:"60(0,06)", drivePower:"2,2 / 220", weight:"105", size:"1000x500x820"},
         {model:"Компрессор К13", typeAuto: "Передвижной / +", capacityIn:"0,41", capacityOut:"0,25", finalPressureAtm:"6", finalPressureMpa:"0,6", receiver:"60(0,06)", drivePower:"3,0 / 380", weight:"105", size:"1000x500x820"}
     ],
+    notes: ['Компрессорные установки С412М, К29, К29-01 изготавливаются с баллонами вместимостью 10л и 22л соответственно']
+    },
+    {name:"ASO004",
+    number: "ASO004",
+    brandName:"Винтовые компрессоры Бежецкого завода АСО",
+    category:"Поршневые компрессоры",
+    type:"Поршневые компрессоры Бежецкого завода АСО",
+    sectionTitle:"Производительностью до 600 л/мин",
+    img:{path:"", figcaption:""},
+    characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], maxWorkingPressure:"Максимальное рабочее давление,</br>атм", receiver:"Ресивер,</br>л", drivePower:"Мощность привода,</br>кВт / U", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
+    list:[
+        {model:"Компрессор К24М", typeAuto: "Передвижной / -", capacityIn:"0,83", capacityOut:"0,5", maxWorkingPressure:"6", receiver:"70", drivePower:"4,0 / 380", weight:"130", size:"1150x520x980"},
+        {model:"Компрессор К25М", typeAuto: "Передвижной / +", capacityIn:"0,83", capacityOut:"0,5", maxWorkingPressure:"6", receiver:"120", drivePower:"4,0 / 380", weight:"150", size:"1300x620x1150"}
+    ],
+    notes: ''
+    },
+    {name:"ASO005",
+    number: "ASO005",
+    brandName:"Винтовые компрессоры Бежецкого завода АСО",
+    category:"Поршневые компрессоры",
+    type:"Поршневые компрессоры Бежецкого завода АСО",
+    sectionTitle:"Производительностью до 1300 л/мин",
+    img:{path:"../src/maps/itemPage/IMGs/c415m.jpg", figcaption:"C415M"},
+    characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], maxWorkingPressure:"Максимальное рабочее давление,</br>атм", receiver:"Ресивер,</br>л", drivePower:"Мощность привода,</br>кВт / U", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
+    list:[
+        {model:"Компрессор С415М", typeAuto: "Стационарный / +", capacityIn:"0,9", capacityOut:"0,63", maxWorkingPressure:"10", receiver:"230", drivePower:"5,5 / 380", weight:"330", size:"1750x600x1350"},
+        {model:"Компрессор С415М1", typeAuto: "Стационарный / +", capacityIn:"0,9", capacityOut:"0,63", maxWorkingPressure:"10", receiver:"430", drivePower:"5,5 / 380", weight:"380", size:"2100x700x1400"},
+        {model:"Компрессор К2", typeAuto: "Стационарный / +", capacityIn:"0,9", capacityOut:"0,63", maxWorkingPressure:"10", receiver:"150", drivePower:"5,5 / 380", weight:"270", size:"1300x620x1250"},
+        {model:"Компрессор КВ15", typeAuto: "Стационарный / +", capacityIn:"0,9", capacityOut:"0,63", maxWorkingPressure:"10", receiver:"210", drivePower:"5,5 / 380", weight:"150", size:"1000x900x1850"},
+        {model:"Компрессор К30", typeAuto: "Стационарный / +", capacityIn:"1,8", capacityOut:"1,26", maxWorkingPressure:"10", receiver:"500", drivePower:"5,5x2 / 380", weight:"600", size:"2100x760x1450"}
+    ],
+    notes: ''
+    },
+    {name:"ASO006",
+    number: "ASO006",
+    brandName:"Винтовые компрессоры Бежецкого завода АСО",
+    category:"Поршневые компрессоры",
+    type:"Поршневые компрессоры Бежецкого завода АСО",
+    sectionTitle:"Производительностью до 2000 л/мин",
+    img:{path:"../src/maps/itemPage/IMGs/c416m.jpg", figcaption:"C416M"},
+    characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], maxWorkingPressure:"Максимальное рабочее давление,</br>атм", receiver:"Ресивер,</br>л", drivePower:"Мощность привода,</br>кВт / U", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
+    list:[
+        {model:"Компрессор К6", typeAuto: "Передвижной / +", capacityIn:"1,5", capacityOut:"1,1", maxWorkingPressure:"10", receiver:"70", drivePower:"11 / 380", weight:"270", size:"1250x680x1140"},
+        {model:"Компрессор К31", typeAuto: "Передвижной / +", capacityIn:"1,5", capacityOut:"1,1", maxWorkingPressure:"10", receiver:"190", drivePower:"11 / 380", weight:"360", size:"1500x750x1300"},
+        {model:"Компрессор КТ16Э", typeAuto: "Передвижной / +", capacityIn:"1,5", capacityOut:"1,1", maxWorkingPressure:"10", receiver:"150x2", drivePower:"11 / 380", weight:"980", size:"3150x2150x1750"},        
+        {model:"Компрессор С416М", typeAuto: "Стационарный / +", capacityIn:"1,5", capacityOut:"1,1", maxWorkingPressure:"10", receiver:"430", drivePower:"11 / 380", weight:"480", size:"2100x700x1480"},
+        {model:"Компрессор С416М1", typeAuto: "Стационарный / +", capacityIn:"1,5", capacityOut:"1,1", maxWorkingPressure:"10", receiver:"230", drivePower:"11 / 380", weight:"420", size:"1750x600x1400"},
+        {model:"Компрессор С416М", typeAuto: "Стационарный / +", capacityIn:"3,0", capacityOut:"2,2", maxWorkingPressure:"10", receiver:"500", drivePower:"11x2 / 380", weight:"730", size:"2300x700x1500"}
+    ],
+    notes: ''
+    },
+    {name:"ASO007",
+    number: "ASO007",
+    brandName:"Винтовые компрессоры Бежецкого завода АСО",
+    category:"Поршневые компрессоры",
+    type:"Поршневые компрессоры Бежецкого завода АСО",
+    sectionTitle:"Компрессоры высокого давления",
+    img:{path:"", figcaption:""},
+    characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], maxWorkingPressure:"Максимальное рабочее давление,</br>атм", receiver:"Ресивер,</br>л", drivePower:"Мощность привода,</br>кВт / U", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
+    list:[
+        {model:"Компрессор К22", typeAuto: "Стационарный / +", capacityIn:"0,8", capacityOut:"0,5", maxWorkingPressure:"16", receiver:"230", drivePower:"7,5 / 380", weight:"350", size:"1700x600x1350"},        
+        {model:"Компрессор К20", typeAuto: "Стационарный / +", capacityIn:"1,8", capacityOut:"1,0", maxWorkingPressure:"16", receiver:"500", drivePower:"7,5x2 / 380", weight:"620", size:"2100x700x1450"},
+        {model:"Компрессор К33", typeAuto: "Стационарный / +", capacityIn:"1,35", capacityOut:"0,9", maxWorkingPressure:"25", receiver:"250", drivePower:"7,5+11 / 380", weight:"750", size:"1750x600x1350"}
+    ],
+    notes: ''
+    },
+    {name:"ASO008",
+    number: "ASO008",
+    brandName:"Винтовые компрессоры Бежецкого завода АСО",
+    category:"Поршневые компрессоры",
+    type:"Поршневые компрессоры Бежецкого завода АСО",
+    sectionTitle:"С автономным приводом",
+    img:[{path:"../src/maps/itemPage/IMGs/kb8.jpg", figcaption:"КБ8М"},
+    {path:"../src/maps/itemPage/IMGs/kd9.jpg", figcaption:"КД9"},
+    {path:"../src/maps/itemPage/IMGs/kt16.jpg", figcaption:"KT16"}],
+    characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", control:"Управление", base:"Базовая головка", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], maxWorkingPressure:"Максимальное рабочее давление,</br>атм", receiver:"Ресивер,</br>л", drivePowerHP:"Мощность привода,</br>кВт (л.с.)", fuel:"Вид топлива", fuelConsumption:"Расход топлива,</br>кг/час",fuelVolume:"Ёмкость топливного бака, л", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм", maxSpeed:"Макс скорость движения, км/ч"}, 
+    list:[
+        {model:"КБ8М", typeAuto: "Передвижной / +", control:"регулятор давления", base:"К24М", capacityIn:"0,83", capacityOut:"0,55", maxWorkingPressure:"6", receiver:"190", drivePowerHP:"УМЗ-341 - 5,8 (7,5)", fuel:"Бензин А76", fuelConsumption:"2,3",fuelVolume:"6", weight:"260", size:"1450x700x1250", maxSpeed:"-"},
+        {model:"КД9", typeAuto: "Передвижной / +", control:"регулятор давления", base:"С415М", capacityIn:"0,9", capacityOut:"0,63", maxWorkingPressure:"6", receiver:"190", drivePowerHP:"ТМЗ-450Д - 8 (10,5)", fuel:"Дизтопливо", fuelConsumption:"2,3",fuelVolume:"8", weight:"380", size:"1450x720x1300", maxSpeed:"-"},
+        {model:"КТ16", typeAuto: "Передвижной / +", control:"-", base:"С416М", capacityIn:"до 2", capacityOut:"до 1,5", maxWorkingPressure:"8", receiver:"150x2", drivePowerHP:"Вал отбора мощности трактора", fuel:"-", fuelConsumption:"-",fuelVolume:"-", weight:"980", size:"3150x2150x1750", maxSpeed:"20"},
+    ],
+    notes: ''
+    },
+    {name:"ASO009",
+    number: "ASO009",
+    brandName:"Винтовые компрессоры Бежецкого завода АСО",
+    category:"Поршневые компрессоры",
+    type:"Поршневые компрессоры Бежецкого завода АСО",
+    sectionTitle:"Поршневые компрессоры на базе импортных компрессорных головок",
+    img:{path:"", figcaption:""},
+    characteristics:{model:"Модель", typeAuto: "Тип/Автоматика,</br>(+;-)", capacity:["Производит. м3/мин по", "всасыванию", "нагнетанию"], maxWorkingPressure:"Максимальное рабочее давление,</br>атм", receiver:"Ресивер,</br>л", drivePower:"Мощность привода,</br>кВт / U", weight:"Вес,</br>кг", size:"Габариты</br>А х В х С, мм"}, 
+    list:[
+        {model:"Компрессор К-25М2", typeAuto: "Передвижной / +", capacityIn:"0,68 / 0,62", capacityOut:"0,42 / 0,39", maxWorkingPressure:"8 / 10", receiver:"70", drivePower:"4,0 / 380", weight:"100", size:"1130x480x920"},
+        {model:"Компрессор К-25М1", typeAuto: "Передвижной / +", capacityIn:"0,68 / 0,62", capacityOut:"0,42 / 0,39", maxWorkingPressure:"8 / 10", receiver:"120", drivePower:"4,0 / 380", weight:"120", size:"1150x540x1100"},
+        {model:"Компрессор К26", typeAuto: "Передвижной / +", capacityIn:"0,78", capacityOut:"0,60", maxWorkingPressure:"8 / 10", receiver:"120", drivePower:"5,5 / 380", weight:"125", size:"1150x540x1100"},        
+        {model:"Компрессор С415М2", typeAuto: "Стационарный / +", capacityIn:"0,87 / 0,83", capacityOut:"0,63 / 0,6", maxWorkingPressure:"8 / 10", receiver:"230", drivePower:"5,5 / 380", weight:"200", size:"1770x560x1110"},
+        {model:"Компрессор С415М4", typeAuto: "Стационарный / +", capacityIn:"0,87 / 0,83", capacityOut:"0,63 / 0,6", maxWorkingPressure:"8 / 10", receiver:"430", drivePower:"5,5 / 380", weight:"260", size:"1850x650x1250"},
+        {model:"Компрессор С416М2", typeAuto: "Стационарный / +", capacityIn:"1,2 / 1,1", capacityOut:"0,85 / 0,8", maxWorkingPressure:"8 / 10", receiver:"230", drivePower:"7,5 / 380", weight:"220", size:"1600x700x1200"},
+        {model:"Компрессор С416М4", typeAuto: "Стационарный / +", capacityIn:"1,2 / 1,1", capacityOut:"0,85 / 0,8", maxWorkingPressure:"8 / 10", receiver:"430", drivePower:"7,5 / 380", weight:"280", size:"1850x650x1350"}
+    ],
     notes: ''
     }
 ];

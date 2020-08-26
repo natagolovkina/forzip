@@ -13,13 +13,33 @@ const ItemSectionTitle = ({title}) => {
     )
 };
 
+let classesIfSeveralImgs = function (img) {
+    let classes = ["itemContainer", "flex"];
+    if (Array.isArray(img)) {
+        classes.push("flex-wrap");
+    }
+    return classes.join(" ")
+};
+
 const ItemImg = ({img}) => {
-    return(
-        <figure className="itemContainer_imgContainer flex flex-direction_column justify-content_center align-items_center box-sizing">
-            <img src={img.path} className="itemImg" />
-            <figcaption className="textFontDefault">{img.figcaption}</figcaption>
-        </figure>
-    )
+    if (Array.isArray(img)) {
+        let imgs = img;
+        return (
+            imgs.map((img, imgNum) => (
+                <figure className="itemContainer_imgContainer flex flex-direction_column justify-content_center align-items_center box-sizing" key={imgNum} style={{marginBottom: 10 + 'px'}}>
+                    <img src={img.path} className="itemImg" />
+                    <figcaption className="textFontDefault">{img.figcaption}</figcaption>
+                </figure>)
+            )
+        )
+    } else {
+        return(
+            <figure className="itemContainer_imgContainer flex flex-direction_column justify-content_center align-items_center box-sizing">
+                <img src={img.path} className="itemImg" />
+                <figcaption className="textFontDefault">{img.figcaption}</figcaption>
+            </figure>
+        )
+    }
 };
 
 let ifArray = function (characteristics) {
@@ -98,14 +118,14 @@ const ItemTable = ({itemsVar}) => {
 };
 
 export const Item = ({item}) => {
-    console.log(item);
+    console.log("item: ", item);
     return(
         <div className="content__container">
             <ItemTypeTitle title = {item[0].type} />
             {item.map((itemsVar, i) => (
-                <Fragment>
-                    <ItemSectionTitle title = {itemsVar.sectionTitle} key={i}/>
-                    <div className="itemContainer flex" key={i*100}>
+                <Fragment key={i}>
+                    <ItemSectionTitle title = {itemsVar.sectionTitle}/>
+                    <div className={classesIfSeveralImgs(itemsVar.img)}>
                         <ItemImg img = {itemsVar.img} />
                         <ItemTable itemsVar = {itemsVar} />
                     </div>
