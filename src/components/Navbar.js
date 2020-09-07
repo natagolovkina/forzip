@@ -1,6 +1,39 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import {Link} from 'react-router-dom';
 import '@styles/navbar.css';
+import ItemContext from '@/context/item/itemContext';
+
+const SearchInput = () => {
+	const [value, setValue] = useState('');	
+    const {showNewItem} = useContext(ItemContext);
+		
+	function submitHandler (event) {
+		event.preventDefault();
+	
+		if (value.trim()) {
+			let itemURL = new URL (window.location.href);
+			if (itemURL.pathname === '/item') {
+				itemURL.searchParams.set('type', value);
+				window.history.pushState(null, null, itemURL);
+				showNewItem();
+				setValue('');
+			} else {
+				itemURL.pathname = '/item';
+				itemURL.searchParams.set('type', value);
+				window.location.href = itemURL;
+			}
+		}
+	};
+
+	return(
+		<form onSubmit={submitHandler}>
+			<input type="text" placeholder="Искать здесь..."
+			className="navbar__container_searchInput box-sizing border_1px border-radius_4px"
+			value={value}
+			onChange={event => setValue(event.target.value)} />
+		</form>
+	)
+};
 
 export const Navbar = () => {
     return(
@@ -13,16 +46,17 @@ export const Navbar = () => {
 						<div className="navbar__container_name textFontDefault box-sizing"><strong>Форзип</strong> <br/>г. Москва
 						</div>
 					</Link>
-				</div>		
+				</div>
 	
 				<div className="navbar__container flex align-items_center">
 	
-					<input type="text" placeholder="Искать здесь..."
-					className="navbar__container_searchInput box-sizing border_1px border-radius_4px" />
+					<SearchInput />
 	
 					<div className="navbar__container_request flex justify-content_center">
-						<img src="onlineRequestForDark.png" className="imgOnlineRequest hidden" id="navbar-btnOnlineRequest" 
-						title="ОСТАВИТЬ ЗАЯВКУ" />		
+						<Link to="/request" className="navbar__container_logoContainer flex align-items_center text-decoration_none">
+							<img src="onlineRequestForDark.png" className="imgOnlineRequest hidden" id="navbar-btnOnlineRequest" 
+							title="ОСТАВИТЬ ЗАЯВКУ" />
+						</Link>
 					</div>
 	
 					<div className="navbar__container_contacts box-sizing">
@@ -30,7 +64,7 @@ export const Navbar = () => {
 						<br />
 						<a href="mailto:info@forzip.ru" className="navbar__container_contacts_links text-decoration_none">info@forzip.ru</a>
 					</div>
-				</div>		
+				</div>
 			</div>
 		</div>
     )

@@ -1,7 +1,7 @@
 import '@styles/styles.css';
 
-import btnOnlineRequestModule from '@js/navbarOnlineRequest';
-btnOnlineRequestModule();
+// import btnOnlineRequestModule from '@js/navbarOnlineRequest';
+// btnOnlineRequestModule();
 
 /*
 import logoForDark from '@/assets/logoForDark.png';
