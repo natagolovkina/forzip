@@ -7,6 +7,12 @@ const ItemTypeTitle = ({title}) => {
     )
 };
 
+// const SeparatingLine = () => {
+//     return(
+//         <div></div>
+//     )
+// }
+
 const ItemSectionTitle = ({title}) => {
     return(
         <h2 className="itemSectionTitle">{title}</h2>
@@ -125,6 +131,7 @@ export const Item = ({item}) => {
                 <ItemTypeTitle title = {item[0].type} />
                 {item.map((itemsVar, i) => (
                     <Fragment key={i}>
+                        <hr />
                         <ItemSectionTitle title = {itemsVar.sectionTitle}/>
                         <div className={classesIfSeveralImgs(itemsVar.img)}>
                             <ItemImg img = {itemsVar.img} />
