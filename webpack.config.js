@@ -63,6 +63,10 @@ const plugins = () => {
                 {
                     from: path.resolve(__dirname,'src/assets/messengersIcons/telegramm-logo.jpg'),
                     to: path.resolve(__dirname,'dist')
+                },
+                {
+                    from: path.resolve(__dirname,'src/assets/noimage.jpg'),
+                    to: path.resolve(__dirname,'dist')
                 }
             ]
         }),

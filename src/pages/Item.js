@@ -7,12 +7,6 @@ const ItemTypeTitle = ({title}) => {
     )
 };
 
-// const SeparatingLine = () => {
-//     return(
-//         <div></div>
-//     )
-// }
-
 const ItemSectionTitle = ({title}) => {
     return(
         <h2 className="itemSectionTitle">{title}</h2>
@@ -28,6 +22,7 @@ let classesIfSeveralImgs = function (img) {
 };
 
 const ItemImg = ({img}) => {
+    if (img.path == "") {img.path = "noimage.jpg"};
     if (Array.isArray(img)) {
         let imgs = img;
         return (
