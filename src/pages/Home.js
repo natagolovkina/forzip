@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import {AboutUs} from '@components/AboutUs';
-import {CarouselGoods} from '@components/CarouselGoods';
+import {Carousel} from '@components/Carousel';
 import {Brands} from '@components/Brands';
 import '@styles/content-main.css';
 
@@ -9,7 +9,7 @@ export const Home = () => {
         <Fragment>
             <div className="content__container flex justify-content_space-between">
                 <AboutUs />
-                <CarouselGoods />
+                <Carousel />
             </div>
             <div className="content__container">
                 <Brands />
