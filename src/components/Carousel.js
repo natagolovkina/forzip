@@ -24,23 +24,31 @@ let makeState4Carousel = function (arr) {
     return resArr
 };
 
-const CarouselItem = ({items}) => (
-    <Fragment>
-        {items.map((item, i) => (
-            <div className="content__goodsCarousel_gallery_cardContainer box-sizing border_1px border-radius_4px"
-            key={i}>
-                <figure className="carouselCard flex flex-direction_column align-items_center">
-                    <div className="carouselCard_imgContainer flex">
-                        <img src={item.img.path} className="carouselCard_img" />
-                    </div>
-                    <figcaption className="carouselCard_name cardName font-size_12px">
-                        {item.name4Carousel}
-                    </figcaption>
-                </figure>
-            </div>
-        ))}
-    </Fragment>
-);
+const CarouselItem = ({items}) => {
+    function clickHandler (i) {
+        let itemURL = new URL (window.location.href);
+        itemURL.pathname = '/item';
+        itemURL.searchParams.set('type', items[i].type);
+        window.location.href = itemURL;
+    };
+    return(
+        <Fragment>
+            {items.map((item, i) => (
+                <div className="content__goodsCarousel_gallery_cardContainer box-sizing border_1px border-radius_4px"
+                key={i} onClick={() => clickHandler(i)}>
+                    <figure className="carouselCard flex flex-direction_column align-items_center">
+                        <div className="carouselCard_imgContainer flex">
+                            <img src={item.img.path} className="carouselCard_img" />
+                        </div>
+                        <figcaption className="carouselCard_name cardName font-size_12px">
+                            {item.name4Carousel}
+                        </figcaption>
+                    </figure>
+                </div>
+            ))}
+        </Fragment>
+    )
+};
 
 export const Carousel = () => {
     const [carouselState, setCarouselState] = useState({
