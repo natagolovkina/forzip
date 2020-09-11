@@ -1,41 +1,54 @@
 import React, {Fragment, useState} from 'react';
 import '@styles/block-carousel.css';
 
-//тестовый массив с товарами
-let carouselItemsTest = [
-    {title:"Компрессор Зубр", imgSrc:"../src/maps/carousel/1.png"},
-    {title:"Ресивер AIRRUS (РКЗ)", imgSrc:"../src/maps/carousel/2.png"},
-    {title:"Части для компрессоров", imgSrc:"../src/maps/carousel/3.png"},
-    {title:"Гидрометр", imgSrc:"../src/maps/carousel/4.png"},  
-    {title:"Колесо шасси", imgSrc:"../src/maps/carousel/5.png"}
-];
-
-const CarouselItem = ({items}) => {
-    return(
-        <Fragment>
-            {items.map((item, i) => (
-                <div className="content__goodsCarousel_gallery_cardContainer box-sizing border_1px border-radius_4px"
-                key={i}>
-                    <figure className="carouselCard flex flex-direction_column align-items_center">
-                        <div className="carouselCard_imgContainer flex">
-                            <img src={item.imgSrc} className="carouselCard_img" />
-                        </div>
-                        <figcaption className="carouselCard_name cardName font-size_12px">
-                            {item.title}
-                        </figcaption>
-                    </figure>
-                </div>
-            ))}
-        </Fragment>
-    )
+import itemsMap from '@/maps/itemPage/itemsMap';
+let shuffle = function (arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    };
 };
+
+let makeState4Carousel = function (arr) {
+    let resArr = arr.map(item => ({...item}));
+    shuffle(resArr);
+    resArr.length = 10;
+    resArr.map(item => {
+        if (Array.isArray(item.img)) {item.img = item.img[0];};
+        if (item.img.path == "") {item.img.path = "noimage.jpg"};
+        item.name4Carousel = item.type;
+        if (item.name4Carousel.length > 30) {
+            item.name4Carousel = item.name4Carousel.substr(0, 27) + '...';
+        };
+    });
+    return resArr
+};
+
+const CarouselItem = ({items}) => (
+    <Fragment>
+        {items.map((item, i) => (
+            <div className="content__goodsCarousel_gallery_cardContainer box-sizing border_1px border-radius_4px"
+            key={i}>
+                <figure className="carouselCard flex flex-direction_column align-items_center">
+                    <div className="carouselCard_imgContainer flex">
+                        <img src={item.img.path} className="carouselCard_img" />
+                    </div>
+                    <figcaption className="carouselCard_name cardName font-size_12px">
+                        {item.name4Carousel}
+                    </figcaption>
+                </figure>
+            </div>
+        ))}
+    </Fragment>
+);
 
 export const Carousel = () => {
     const [carouselState, setCarouselState] = useState({
         step: 170, // ширина элемента, шаг сдвига карусели
         count: 3, // видимое количество изображений
         position: 0, // положение ленты прокрутки
-        itemsArr: carouselItemsTest, // массив айтемов
+        // itemsArr: carouselItemsTest, // массив айтемов
+        itemsArr: makeState4Carousel(itemsMap), // массив айтемов
         intervalOn: false
     });
 
